@@ -1,0 +1,13 @@
+:root {
+  --font-title: "NovaSquare";
+  --font-H: "GirtyneDemoRegular";
+}
+@font-face {
+  font-family: "GirtyneDemoRegular";
+  src: url(../fonts/GirtyneDemoRegular-LVxMy.ttf);
+}
+
+@font-face {
+  font-family: "NovaSquare";
+  src: url(../fonts/NovaSquare-Regular.ttf);
+}

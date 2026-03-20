@@ -1,0 +1,26 @@
+
+:root {
+  /* Backgrounds */
+  --color-bg:         #1A1A1A;
+  --color-surface:    #2C2C2C;
+  --color-hover:      #3D2B31;
+
+  /* Rose */
+  --color-text:       #F9EEF2;
+  --color-rose-pale:  #F2D5DF;
+  --color-rose-dusty: #D4879C;
+  --color-rose-deep:  #A84E6A;
+
+  /* Neutres */
+  --color-muted:      #888888;
+
+  /* Touche fantaisie */
+  --color-gold:       #C8A96E;
+
+  /* Bordures */
+  --color-border:     #3D2B31;
+
+  /* Utilitaires */
+  --radius:           12px;
+  --radius-pill:      25px;
+}

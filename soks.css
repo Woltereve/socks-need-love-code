@@ -1,0 +1,236 @@
+
+
+
+
+
+/* =====================
+   BASE
+   ===================== */
+body {
+  background-color:var( --color-bg);
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  color: var(--color-text);
+  margin: 0;
+  padding: 20px;
+}
+
+/* =====================
+   TITRES
+   ===================== */
+h1 {
+  text-align: center;
+  color: var(--color-rose-deep);
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: var(--color-rose-deep);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* =====================
+   GRILLE CHAUSSETTES
+   ===================== */
+.sock-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* * Tablette : 2 colonnes 
+@media (max-width: 768px) {
+  .sock-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 16px;
+  }
+}
+ 
+/* Smartphone : 1 colonne */
+/* @media (max-width: 480px) {
+  .sock-grid {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+} */ 
+
+/* =====================
+   CARTE CHAUSSETTE
+   ===================== */
+.sock-card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.sock-photo img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  object-position: center;
+  background-color: var(--color-hover);
+}
+
+.sock-info {
+  padding: 16px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.sock-info h2 {
+  margin: 0 0 6px;
+  font-size: 1.3em;
+  color: var(--color-rose-pale);
+}
+
+.sock-age {
+  color: var(--color-rose-dusty);
+  font-size: 0.9em;
+  font-style: italic;
+  margin: 4px 0 12px;
+}
+
+/* =====================
+   TAGS
+   ===================== */
+.sock-tags {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.sock-tags span {
+  background: var(--color-hover);
+  color: var(--color-rose-pale);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75em;
+  border: 1px solid var(--color-border);
+}
+
+/* =====================
+   TEXTES CARTE
+   ===================== */
+.sock-bio {
+  font-size: 0.88em;
+  color: var(--color-muted);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.origine {
+  font-size: 0.82em;
+  color: var(--color-gold);
+  margin: 4px 0;
+}
+
+.profil {
+  font-size: 0.82em;
+  color: var(--color-rose-dusty);
+  margin: 4px 0 8px;
+  font-style: italic;
+}
+
+.status {
+  font-size: 0.85em;
+  color: var(--color-muted);
+  margin-bottom: 14px;
+}
+
+/* =====================
+   BOUTONS
+   ===================== */
+.match-btn {
+  background: var(--color-rose-deep);
+  color: var(--color-rose-pale);
+  border: none;
+  padding: 10px 18px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  font-size: 0.92em;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  margin: 4px;
+  transition: background 0.2s ease;
+}
+
+.match-btn:hover {
+  background: var(--color-hover);
+  color: var(--color-rose-dusty);
+}
+
+/* Premier bouton : plus discret */
+.match-btn:first-of-type {
+  background: transparent;
+  border: 1px solid var(--color-rose-deep);
+  color: var(--color-rose-dusty);
+}
+
+.match-btn:first-of-type:hover {
+  background: var(--color-hover);
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  border-top: 1px solid var(--color-border);
+}
+
+footer h6 {
+  color: var(--color-gold);
+  font-size: 0.9em;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
