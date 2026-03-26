@@ -1,13 +1,8 @@
-:root {
-  --font-title: "NovaSquare";
-  --font-H: "GirtyneDemoRegular";
-}
-@font-face {
-  font-family: "GirtyneDemoRegular";
-  src: url(../fonts/GirtyneDemoRegular-LVxMy.ttf);
-}
+/* Import depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Lato:wght@300;400&display=swap');
 
-@font-face {
-  font-family: "NovaSquare";
-  src: url(../fonts/NovaSquare-Regular.ttf);
+/* Déclaration des variables */
+:root {
+  --font-titre: 'Cormorant Garamond', Georgia, serif;
+  --font-corps: 'Lato', Arial, sans-serif;
 }
