@@ -1,3 +1,6 @@
+
+<?php include 'top.php'; ?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -43,12 +46,7 @@
 
         </div>
       </div>
-
-     
-      
-
-          
-        
     </div>
   </body>
 </html>
+<?php include 'bottom.php'; ?>

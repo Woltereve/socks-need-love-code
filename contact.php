@@ -1,3 +1,5 @@
+<?php include 'top.php'; ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -49,3 +51,5 @@
 
 
 </html>
+
+<?php include 'bottom.php'; ?>
