@@ -1,24 +1,24 @@
-<html lang="fr">
+<html lang="fr"/>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dating Socks</title>
     <link rel="stylesheet" href="styles/all-variables.css" />
-    <link rel="stylesheet" href="soks.css" />
+    <link rel="stylesheet" href="socks.css" />
   </head>
   <body>
     <h1>The Dating Socks</h1>
 
-    <div class="sock-card">
-        <div class="images/intro">
-          <img src=" alt="Chaussette célibataire" />
+    <div class= "sock-card">
+        <div class= "images/intro">
+          <img src="asset/images/chaussette_de_garde.jpeg" alt="Chaussette célibataire">
         </div>
 
     <!-- SOCK 1 -->
     <div class="sock-grid">
       <div class="sock-card">
         <div class="sock-photo">
-         <img src="asset/images/coeur_blanc.png" alt="">
+         <img src="asset/images/coeur_blanc.png" alt=""/>
 
         <div class="sock-info">
           <h2>Noire à coeur blanc</h2>

@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ateier</title>
+    <title>Atelier</title>
+    <link rel="stylesheet" href="styles/all-variables.css" />
+    <link rel="stylesheet" href="acceuil.css" />
   </head>
+  <img src="asset/images/logo.svg" alt="logo" class="logo"/>
 
   <body>
     <header>
@@ -21,33 +24,33 @@
     
     <form action="/contact">
         <label for="firstname">Nom</label>
-    <input type="text" id="firstname" name=firstname" />
+    <input type="text" id="firstname" name=firstname />
 
     <label for="lastname">Prénom </label>
     <input type="text" name="lastname" />
 
-    <label for="organisation">sociétée</label>
+    <label for="organisation">sociétée </label>
     <input type="text" name="organisation">
 
 
-    <label for="formessage">Inserez votre message ici!</label>
-    <textarea name="message" id="message"></textarea>
+    <label for="message">Insérez votre message ici !</label>
+<textarea id="message" name="message" placeholder="Exprimez vos sentiments textiles..."></textarea>
 
     <button type="submit">envoyer</button>
     
 
      </form>
      <figure>
-         <img src="" alt="">
+         <img src="" alt=""/>
         </figure>
     </main>
-    <footer></footer>
+</body>
+    <footer>
     <address>
-       <p>dating-soks@gmail.com</p>
+       <p>dating-socks@gmail.com</p>
        <p>“A blog template created by Eve for Dating Sock”.</p>
     </address>
     </footer>
-</body>
 
 
 </html>

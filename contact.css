@@ -1,0 +1,21 @@
+body{
+    background-color: var(--color-surface);
+}
+
+
+.button {
+color: var(--color-rose-dusty);
+  font-size: 1.1rem;
+  padding: 0.6rem;
+  border-radius: 25px;
+  font-family: var(--font-H);
+  font-weight: normal;
+  text-decoration: underline;
+  text-transform: uppercase;
+ box-shadow: rgb(0, 0, 0) 3px 3px 15px 5px;
+ display: inline-block;
+}
+footer{
+
+    
+}

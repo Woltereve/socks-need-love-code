@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 40" width="220" height="40">
+
+  <!-- Mini chaussette -->
+  <g transform="translate(0, 4)">
+    <rect x="4" y="0" width="12" height="22" rx="4" fill="#1A1A1A" stroke="#A84E6A" stroke-width="1"/>
+    <path d="M4 17 Q0 22 1 28 Q2 33 11 33 Q19 33 20 28 Q21 23 19 17 Z" fill="#1A1A1A" stroke="#A84E6A" stroke-width="1"/>
+    <rect x="4" y="3" width="12" height="3" rx="1.5" fill="#A84E6A"/>
+    <path d="M8 13 C8 11 6 11 6 13 C6 15 8 17 8 17 C8 17 10 15 10 13 C10 11 8 11 8 13Z" fill="#D4879C"/>
+  </g>
+
+  <!-- Texte -->
+  <text x="24" y="18" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" fill="#F9EEF2">Socks Need </text>
+  <text x="122" y="18" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="bold" fill="#A84E6A">Love</text>
+  <text x="24" y="32" font-family="Arial, sans-serif" font-size="8" fill="#888888" letter-spacing="2">MATCHING PLATFORM</text>
+
+</svg>
