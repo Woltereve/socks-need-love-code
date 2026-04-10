@@ -9,11 +9,11 @@
 <body>
       <nav class="navbar">
         <div class="nav-container">
-            <!-- Logo ou Nom du site -->
+            
             <img src="asset/images/logo.svg" alt="logo" class="logo">
             <button class="btn-inscription">S'inscrire</button>
             <button class="btn-Connection">Se connecter</button>
-            <!-- Liens de navigation -->
+            <!-- navigation -->
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#" class="nav-link active">Accueil</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Catalogue</a></li>
