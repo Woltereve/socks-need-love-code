@@ -2,9 +2,7 @@
 
 
 
-/* =====================
-   BASE
-   ===================== */
+/* BASE*/
 body {
   background-color: var(--color-bg);
   font-family: var(--font-corps);
@@ -15,9 +13,7 @@ body {
 }
  
  
-/* =====================
-   TITRES
-   ===================== */
+/* TITRES */
 h1 {
   text-align: center;
   color: var(--color-rose-deep);
@@ -41,9 +37,7 @@ h1::after {
 }
  
  
-/* =====================
-   GRILLE CHAUSSETTES
-   ===================== */
+/* GRILLE CHAUSSETTES */
 .sock-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -56,9 +50,7 @@ h1::after {
 }
  
  
-/* =====================
-   CARTE CHAUSSETTE
-   ===================== */
+/* CARTE CHAUSSETTE*/
 .sock-card {
   background: var(--color-surface);
   border-radius: var(--radius);
@@ -99,9 +91,7 @@ h1::after {
 }
  
  
-/* =====================
-   TAGS
-   ===================== */
+/* TAGS */
 .sock-tags {
   display: flex;
   justify-content: center;
@@ -122,9 +112,7 @@ h1::after {
 }
  
  
-/* =====================
-   TEXTES CARTE
-   ===================== */
+/* TEXTES CARTE*/
 .sock-bio {
   font-family: var(--font-corps);
   font-size: var(--fs-small);
@@ -160,9 +148,7 @@ h1::after {
 }
  
  
-/* =====================
-   BOUTONS
-   ===================== */
+/* BOUTONS */
 .match-btn {
   background: var(--color-rose-deep);
   color: var(--color-rose-pale);
@@ -194,9 +180,7 @@ h1::after {
 }
  
  
-/* =====================
-   FOOTER
-   ===================== */
+/* FOOTER */
 footer {
   text-align: center;
   padding: 30px 20px;

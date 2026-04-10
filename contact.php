@@ -6,12 +6,12 @@
     <title>Atelier</title>
     <link rel="stylesheet" href="styles/all-variables.css" />
     <link rel="stylesheet" href="acceuil.css" />
+    <img src="asset/images/logo.svg" alt="logo" class="logo"/>
   </head>
-  <img src="asset/images/logo.svg" alt="logo" class="logo"/>
 
   <body>
     <header>
-        <h1>contact</h1>
+        <h1>Contact</h1>
         <nav>
             <ul>
                 <li> <a href="/welcome.html">welcome</a></li>
@@ -27,7 +27,7 @@
     <input type="text" id="firstname" name=firstname />
 
     <label for="lastname">Prénom </label>
-    <input type="text" name="lastname" />
+    <input type="text" name="lastname" >
 
     <label for="organisation">sociétée </label>
     <input type="text" name="organisation">
@@ -45,12 +45,7 @@
         </figure>
     </main>
 </body>
-    <footer>
-    <address>
-       <p>dating-socks@gmail.com</p>
-       <p>“A blog template created by Eve for Dating Sock”.</p>
-    </address>
-    </footer>
+   
 
 
 </html>
