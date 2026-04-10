@@ -1,5 +1,7 @@
+ 
+ <link rel="stylesheet" href="acceuil.css" />
  <footer>
           <p>&copy; <?php echo date ('Y') ; ?></p>
-          <p>“A blog template created by Eve for Dating Sock.”</p>
-          <strong>On ne rigole jamais de la chaussette. On rigole avec la chaussette !</strong>
+          <p>”Un projet imaginé par Eve —” </p>
+          <strong>”Parce que personne ne devrait mourir seul au fond d'un tambour de machine à laver.” 🧦</strong>
         </footer>

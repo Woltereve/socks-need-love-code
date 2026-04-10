@@ -1,4 +1,5 @@
-<html lang="fr"/>
+<!DOCTYPE html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,46 +10,44 @@
   <body>
     <h1>The Dating Socks</h1>
 
-    <div class= "sock-card">
-        <div class= "images/intro">
-          <img src="asset/images/chaussette_de_garde.jpeg" alt="Chaussette célibataire">
-        </div>
-
     <!-- SOCK 1 -->
     <div class="sock-grid">
       <div class="sock-card">
         <div class="sock-photo">
-         <img src="asset/images/coeur_blanc.png" alt=""/>
-
-        <div class="sock-info">
-          <h2>Noire à coeur blanc</h2>
-          <p class="sock-age">Célibataire après 13 lavages</p>
-
-          <div class="sock-tags">
-            <span>droit</span>
-            <span>noir</span>
-            <span>polyester</span>
-            <span>Taille 23</span>
-          </div>
-
-          <p class="sock-bio">Rescapée d’un essorage trop brutal.</p>
-          <p class="origine">🏷️ Reçue d'un amour de vacance</p>
-          <p class="profil">
-            🔍Une relation durable (ou au moins jusqu’au prochain trou)
-          </p>
-
-          <p class="status">💔 Célibataire</p>
-
-          <button class="match-btn">❤️ Montrer de l’intérêt</button>
-
-          <button class="match-btn">❤️ Matcher</button>
+          <img src="asset/images/coeur_blanc.png" alt="" />
         </div>
+
+        <div class="sock-info"></div>
+        <h2>Noire à coeur blanc</h2>
+        <p class="sock-age">Célibataire après 13 lavages</p>
       </div>
+
+      <div class="sock-tags">
+        <span>droit</span>
+        <span>noir</span>
+        <span>polyester</span>
+        <span>Taille 23</span>
+      </div>
+
+      <p class="sock-bio">Rescapée d’un essorage trop brutal.</p>
+      <p class="origine">🏷️ Reçue d'un amour de vacance</p>
+      <p class="profil">
+        🔍Une relation durable (ou au moins jusqu’au prochain trou)
+      </p>
+
+      <p class="status">💔 Célibataire</p>
+
+      <button class="match-btn">❤️ Montrer de l’intérêt</button>
+
+      <button class="match-btn">❤️ Matcher</button>
 
       <!-- SOCK 2 -->
       <div class="sock-card">
         <div class="sock-photo">
-          <img src="asset/images/en_rouge_et_noir.png" alt="Chaussette célibataire" 
+          <img
+            src="asset/images/en_rouge_et_noir.png"
+            alt="Chaussette célibataire"
+          />
         </div>
 
         <div class="sock-info">
@@ -95,11 +94,13 @@
           </div>
 
           <p class="sock-bio">
-            Glissée du pied d’un bébé tout potelé, elle cherche désormais sa moitié.
+            Glissée du pied d’un bébé tout potelé, elle cherche désormais sa
+            moitié.
           </p>
           <p class="origine">🏷️ Une rue commerçante à Bruges</p>
           <p class="profil">
-            🔍Recherche un bébé aux chevilles solides pour affronter un apprentissage de la marche intense.
+            🔍Recherche un bébé aux chevilles solides pour affronter un
+            apprentissage de la marche intense.
           </p>
 
           <p class="status">💔 Célibataire</p>
@@ -109,10 +110,11 @@
       </div>
 
       <!-- SOCK 4 -->
-    
+
       <div class="sock-card">
         <div class="sock-photo">
-         <img src="asset/images/chien_noel.png" alt=""></div>
+          <img src="asset/images/chien_noel.png" alt="" />
+        </div>
 
         <div class="sock-info">
           <h2>Rose et chien de noël</h2>
@@ -125,10 +127,14 @@
             <span>Taille 33</span>
           </div>
 
-          <p class="sock-bio">Trouvée sous un canapé, elle espère désormais sortir de l’ombre pour rencontrer sa moitié.</p>
+          <p class="sock-bio">
+            Trouvée sous un canapé, elle espère désormais sortir de l’ombre pour
+            rencontrer sa moitié.
+          </p>
           <p class="origine">🏷️ Perdue à un Noël endiablé</p>
           <p class="profil">
-            🔍Recherche relation scolaire sans bulletin de notes, mais avec beaucoup de complicité
+            🔍Recherche relation scolaire sans bulletin de notes, mais avec
+            beaucoup de complicité
           </p>
 
           <p class="status">💔 Célibataire</p>
@@ -140,9 +146,4 @@
       </div>
     </div>
   </body>
-  <footer>
-    <p>&copy; <?php echo date ('Y') ; ?></p>
-    <p>“A blog template created by Eve for Dating Sock”.</p>
-    <h6>On ne rigole jamais de la chaussette. On rigole avec la chaussette</h6>
-  </footer>
 </html>
