@@ -41,109 +41,14 @@
 
       <button class="match-btn">❤️ Matcher</button>
 
-      <!-- SOCK 2 -->
-      <div class="sock-card">
-        <div class="sock-photo">
-          <img
-            src="asset/images/en_rouge_et_noir.png"
-            alt="Chaussette célibataire"
-          />
-        </div>
-
-        <div class="sock-info">
-          <h2>Rouge à talon noir</h2>
-          <p class="sock-age">Célibataire après 3 lavages</p>
-
-          <div class="sock-tags">
-            <span>gauche</span>
-            <span>noir et rouge</span>
-            <span>polyester</span>
-            <span>Taille 39-42</span>
-          </div>
-
-          <p class="sock-bio">
-            Seule depuis un vol sur fil à linge par un volatile haineux lors
-            d'une envolée sauvage.
-          </p>
-          <p class="origine">🏷️ Boutique souvenir au concert de Jeanne Mas</p>
-          <p class="profil">
-            🔍Une chaussette douce et attentionnée, prête à partager des moments
-            chaleureux.
-          </p>
-          <p class="status">💔 Célibataire</p>
-          <button class="match-btn">❤️ Montrer de l’intérêt</button>
-          <button class="match-btn">❤️ Matcher</button>
         </div>
       </div>
 
-      <!-- SOCK 3 -->
-      <div class="sock-card">
-        <div class="sock-photo">
-          <img src="asset/images/brugette.png" alt="Chaussette célibataire" />
-        </div>
+     
+      
 
-        <div class="sock-info">
-          <h2>Mini socquette brugeoise</h2>
-          <p class="sock-age">Célibataire depuis 2 jours</p>
-
-          <div class="sock-tags">
-            <span>gauche</span>
-            <span>Blanche </span>
-            <span>coton</span>
-            <span>Taille 20-22</span>
-          </div>
-
-          <p class="sock-bio">
-            Glissée du pied d’un bébé tout potelé, elle cherche désormais sa
-            moitié.
-          </p>
-          <p class="origine">🏷️ Une rue commerçante à Bruges</p>
-          <p class="profil">
-            🔍Recherche un bébé aux chevilles solides pour affronter un
-            apprentissage de la marche intense.
-          </p>
-
-          <p class="status">💔 Célibataire</p>
-          <button class="match-btn">❤️ Montrer de l’intérêt</button>
-          <button class="match-btn">❤️ Matcher</button>
-        </div>
-      </div>
-
-      <!-- SOCK 4 -->
-
-      <div class="sock-card">
-        <div class="sock-photo">
-          <img src="asset/images/chien_noel.png" alt="" />
-        </div>
-
-        <div class="sock-info">
-          <h2>Rose et chien de noël</h2>
-          <p class="sock-age">Célibataire depuis 67 lavages</p>
-
-          <div class="sock-tags">
-            <span>Droit</span>
-            <span>Rose avec de petit chiens</span>
-            <span>Polyester</span>
-            <span>Taille 33</span>
-          </div>
-
-          <p class="sock-bio">
-            Trouvée sous un canapé, elle espère désormais sortir de l’ombre pour
-            rencontrer sa moitié.
-          </p>
-          <p class="origine">🏷️ Perdue à un Noël endiablé</p>
-          <p class="profil">
-            🔍Recherche relation scolaire sans bulletin de notes, mais avec
-            beaucoup de complicité
-          </p>
-
-          <p class="status">💔 Célibataire</p>
-
-          <button class="match-btn">❤️ Montrer de l’intérêt</button>
-
-          <button class="match-btn">❤️ Matcher</button>
-        </div>
-      </div>
+          
+        
     </div>
   </body>
 </html>
