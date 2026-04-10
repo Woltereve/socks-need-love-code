@@ -14,13 +14,7 @@
   <body>
     <header>
         <h1>Contact</h1>
-        <nav>
-            <ul>
-                <li> <a href="/welcome.html">welcome</a></li>
-                 <li> <a href="/catalog.html">catalog</a></li>
-                  <li> <a href="/contact.html">contact</a></li>
-
-        </ul></nav>
+        
     </header>
     <main>
     

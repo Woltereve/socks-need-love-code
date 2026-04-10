@@ -14,11 +14,12 @@
             <button class="btn-Connection">Se connecter</button>
             <!-- navigation -->
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#" class="nav-link active">Accueil</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Catalogue</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Mes chaussettes</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Mon Compte</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                
+                <li class="nav_acceuil"><a href="# ">Accueil</a></li>
+                <li class="nav-catalogue"><a href="#" >Catalogue</a></li>
+                <li class="nav-chaussettes"><a href="#" >Mes chaussettes</a></li>
+                <li class="nav-compte"><a href="#" >Mon Compte</a></li>
+                <li class="nav-contact"><a href="#" ">Contact</a></li>
             </ul>
         </div>
     </nav>
