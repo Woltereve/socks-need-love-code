@@ -1,7 +1,4 @@
-/* =============================================
-   SOCKS NEED LOVE — Panel Admin
-   admin.css
-   ============================================= */
+
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -22,7 +19,7 @@
 }
 
 body {
-  background: var(--noir);
+  background: var(--border);
   color: var(--texte);
   font-family: 'Lato', sans-serif;
   font-weight: 300;
