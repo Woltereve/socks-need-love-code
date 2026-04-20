@@ -1,49 +1,27 @@
 <?php include 'top.php'; ?>
+<link rel="stylesheet" href="contact.css">
+<main>
+  <h1>Contact</h1>
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atelier</title>
-    <link rel="stylesheet" href="styles/all-variables.css" />
-    <link rel="stylesheet" href="contact.css" />
-    
-  </head>
+  <div class="form-container">
+    <form action="contact-send.php" method="POST">
 
-  <body>
-    <header>
-        <h1>Contact</h1>
-        
-    </header>
-    <main>
-    
-    <form action="/contact">
-        <label for="firstname">Nom</label>
-    <input type="text" id="firstname" name=firstname />
+      <label class="form-label" for="nom">Nom</label>
+      <input class="form-input" type="text" id="nom" name="nom" placeholder="Votre nom…" required />
 
-    <label for="lastname">Prénom </label>
-    <input type="text" name="lastname" >
+      <label class="form-label" for="prenom">Prénom</label>
+      <input class="form-input" type="text" id="prenom" name="prenom" placeholder="Votre prénom…" required />
 
-    <label for="organisation">sociétée </label>
-    <input type="text" name="organisation">
+      <label class="form-label" for="email">Email</label>
+      <input class="form-input" type="email" id="email" name="email" placeholder="votre@email.com" required />
 
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-textarea" id="message" name="message" placeholder="Exprimez vos sentiments textiles…" required></textarea>
 
-    <label for="message">Insérez votre message ici !</label>
-<textarea id="message" name="message" placeholder="Exprimez vos sentiments textiles..."></textarea>
+      <button class="btn btn-primary" type="submit">Envoyer</button>
 
-    <button type="submit">envoyer</button>
-    
-
-     </form>
-     <figure>
-         <img src="" alt=""/>
-        </figure>
-    </main>
-</body>
-   
-
-
-</html>
+    </form>
+  </div>
+</main>
 
 <?php include 'bottom.php'; ?>

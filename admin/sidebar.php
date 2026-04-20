@@ -6,11 +6,13 @@
     <a class="nav-item" href="admin-chaussettes.php"><span class="nav-icon">◈</span> Chaussettes</a>
     <a class="nav-item" href="admin-categories.php"><span class="nav-icon">✦</span> Catégories</a>
     <a class="nav-item" href="admin-articles.php"><span class="nav-icon">✎</span> Articles</a>
+
+
   </div>
   <div class="nav-section">
     <span class="nav-label">Modération</span>
    
-<a class="nav-item " href="admin-signalements.php">
+<a class="nav-item " href="admin-signalement.php"> 
   <span class="nav-icon">⚑</span> Signalements
 </a>
   </div>

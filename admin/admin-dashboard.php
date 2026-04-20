@@ -1,3 +1,7 @@
+<?php
+require "../pdo.php";
+// echo "ADMIN PDO OK";
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

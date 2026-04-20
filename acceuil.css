@@ -214,7 +214,10 @@ footer {
   margin-top: 40px;
   border-top: 3px solid var(--color-gold);
 }
-
+footer a {
+  color: var(--color-rose-dusty);
+  text-decoration: none; 
+}
 footer h6 {
   font-family: var(--font-titre);
   font-size: var(--fs-small);

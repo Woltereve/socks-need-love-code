@@ -66,7 +66,7 @@ h1::after {
   object-position: center;
   background-color: var(--color-hover);
 }
- 
+
 .sock-info {
   padding: 16px;
   text-align: center;
@@ -213,8 +213,4 @@ color: var(--color-rose-dusty);
   text-transform: uppercase;
  box-shadow: rgb(0, 0, 0) 3px 3px 15px 5px;
  display: inline-block;
-}
-footer{
-
-    
 }

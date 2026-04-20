@@ -1,18 +1,7 @@
 <?php include 'top.php'; ?>
 
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Mon compte - Socks Need Love</title>
-  <link rel="stylesheet" href="styles/all-variables.css">
-  <link rel="stylesheet" href="mon-compte.css">
 
- 
-</head>
-
-<body>
 
 <header>
   <h1 class="compte-title">Mon compte</h1>
@@ -66,7 +55,5 @@
 
 </main>
 
-</body>
 
-</html>
 <?php include 'bottom.php'; ?>

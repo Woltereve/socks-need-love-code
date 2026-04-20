@@ -1,4 +1,5 @@
-<?php include 'top.php'; ?>
+<?php include 'top.php'; 
+ require "pdo.php"; ?>
 <link rel="stylesheet" href="acceuil.css" />
 
     <h1>The Dating Socks</h1>
@@ -27,7 +28,6 @@ Aucune enquête. Aucun suspect. Aucun coupable.</p>
         </div>
     
        
-    </body>
-</html>
+  
 
 <?php include 'bottom.php'; ?>
