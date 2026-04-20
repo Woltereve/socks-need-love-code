@@ -1,4 +1,5 @@
 <?php include 'top.php'; ?>
+<link rel="stylesheet" href="acceuil.css" />
 
     <h1>The Dating Socks</h1>
 

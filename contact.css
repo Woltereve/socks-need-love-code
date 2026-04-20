@@ -1,21 +1,47 @@
-body{
-    background-color: var(--color-surface);
+/* =====================
+   FORMULAIRE CONTACT
+   ===================== */
+
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-
-.button {
-color: var(--color-rose-dusty);
-  font-size: 1.1rem;
-  padding: 0.6rem;
-  border-radius: 25px;
-  font-family: var(--font-H);
-  font-weight: normal;
-  text-decoration: underline;
-  text-transform: uppercase;
- box-shadow: rgb(0, 0, 0) 3px 3px 15px 5px;
- display: inline-block;
+form label {
+  font-weight: bold;
+  color: var(--color-rose-deep);
 }
-footer{
 
-    
+form input,
+form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--color-rose-dusty);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: var(--color-rose-deep);
 }

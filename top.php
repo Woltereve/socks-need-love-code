@@ -11,17 +11,17 @@
         <div class="nav-container">
             
             <img src="asset/images/logo.svg" alt="logo" class="logo">
+            <ul class="nav-menu">
+                
+                <li class="nav_acceuil"><a href="acceuil.php" class="nav-link">Accueil</a></li>
+                <li class="nav-catalogue"><a href="catalogue.php" class="nav-link">Catalogue</a></li>
+                <li class="nav-chaussettes"><a href="socks.php" class="nav-link" >Mes chaussettes</a></li>
+                <li class="nav-compte"><a href="#" class="nav-link">Mon Compte</a></li>
+                <li class="nav-contact"><a href="contact.php" class="nav-link">Contact</a></li>
+            </ul>
             <button class="btn-inscription">S'inscrire</button>
             <button class="btn-Connection">Se connecter</button>
            
-            <ul class="nav-menu">
-                
-                <li class="nav_acceuil"><a href="acceuil.php ">Accueil</a></li>
-                <li class="nav-catalogue"><a href="catalogue.php" >Catalogue</a></li>
-                <li class="nav-chaussettes"><a href="socks.php" >Mes chaussettes</a></li>
-                <li class="nav-compte"><a href="#" >Mon Compte</a></li>
-                <li class="nav-contact"><a href="contact.php" >Contact</a></li>
-            </ul>
         </div>
     </nav>
 

@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atelier</title>
     <link rel="stylesheet" href="styles/all-variables.css" />
-    <link rel="stylesheet" href="acceuil.css" />
-    <img src="asset/images/logo.svg" alt="logo" class="logo"/>
+    <link rel="stylesheet" href="contact.css" />
+    
   </head>
 
   <body>
