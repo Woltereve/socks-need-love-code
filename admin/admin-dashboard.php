@@ -1,7 +1,7 @@
 <?php
 require "../pdo.php";
-// echo "ADMIN PDO OK";
-?>
+// echo "ADMIN PDO OK";?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,19 +12,9 @@ require "../pdo.php";
   <link rel="stylesheet" href="admin.css" />
 </head>
 <body>
-
+<?php include 'topbar.php'; ?>
   
-  <div class="topbar">
-    <div class="logo">
-      <div class="logo-dot"></div>
-      Socks Need Love
-      <span class="admin-tag">— admin</span>
-    </div>
-    <div class="topbar-right">
-      <span>Administrateur</span>
-      <div class="avatar">A</div>
-    </div>
-  </div>
+  
 
   <div class="layout">
     <?php include 'sidebar.php'; ?>
@@ -33,8 +23,8 @@ require "../pdo.php";
    
     <main class="content">
 
-      <div class="page-title">Tableau de bord</div>
-      <div class="page-sub">Vue d'ensemble de la plateforme</div>
+      <h1 class="page-title">Tableau de bord</h1>
+      <p class="page-sub">Vue d'ensemble de la plateforme</p>
 
      
       <div class="stats-grid">
@@ -58,8 +48,8 @@ require "../pdo.php";
 
       <div class="grid-2">
 
-        <div class="panel">
-          <div class="panel-title">Derniers inscrits</div>
+        <section class="panel">
+          <h2 class="panel-title">Derniers inscrits</h2>
           <table>
             <thead>
               <tr>
@@ -71,10 +61,11 @@ require "../pdo.php";
            
           </table>
           <a href="admin-users.html" class="btn btn-ghost" style="margin-top:14px;">Voir tous les utilisateurs</a>
-        </div>
+</section>
+       
 
-        <div class="panel">
-          <div class="panel-title">Activité récente</div>
+        <section class="panel">
+          <h2 class="panel-title">Activité récente</h2>
           <table>
             <thead>
               <tr>
@@ -84,13 +75,13 @@ require "../pdo.php";
             </thead>
            
           </table>
-        </div>
-
-      </div>
+</section>
+ </div>
+      
 
       
-      <div class="panel">
-        <div class="panel-title">Signalements en attente</div>
+      <section class="panel">
+        <h2 class="panel-title">Signalements en attente</h2>
         <table>
           <thead>
             <tr>
@@ -102,7 +93,7 @@ require "../pdo.php";
           </thead>
           
         </table>
-      </div>
+      </section>
 
     </main>
   </div>

@@ -28,7 +28,7 @@ body {
 
 a { text-decoration: none; color: inherit; }
 
-/* TOPBAR */
+
 .topbar {
   background: var(--surface);
   border-bottom: 0.5px solid var(--rose-deep);
@@ -82,7 +82,7 @@ a { text-decoration: none; color: inherit; }
   border-radius: 50%;
   background: var(--rose-deep);
   border: 1px solid var(--rose-dust);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 12px;
@@ -90,14 +90,14 @@ a { text-decoration: none; color: inherit; }
   font-family: 'Cormorant Garamond', serif;
 }
 
-/* LAYOUT */
+
 .layout {
   display: grid;
   grid-template-columns: 200px 1fr;
   min-height: calc(100vh - 57px);
 }
 
-/* SIDEBAR */
+
 .sidebar {
   background: var(--surface);
   border-right: 0.5px solid var(--rose-deep);
@@ -148,7 +148,7 @@ a { text-decoration: none; color: inherit; }
 
 .nav-icon { width: 16px; text-align: center; font-size: 14px; }
 
-/* CONTENU */
+
 .content { padding: 32px 36px; }
 
 .page-header {
@@ -172,7 +172,7 @@ a { text-decoration: none; color: inherit; }
   letter-spacing: 0.08em;
 }
 
-/* PANELS */
+
 .panel {
   background: var(--surface2);
   border: 0.5px solid var(--border);
@@ -189,7 +189,7 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 18px;
 }
 
-/* STATS */
+
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -219,7 +219,7 @@ a { text-decoration: none; color: inherit; }
   color: var(--rose-pale);
 }
 
-/* GRILLES */
+
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -234,7 +234,7 @@ a { text-decoration: none; color: inherit; }
   align-items: start;
 }
 
-/* TABLEAU */
+
 .table-wrap {
   background: var(--surface2);
   border: 0.5px solid var(--border);
@@ -267,7 +267,7 @@ tbody td {
   vertical-align: middle;
 }
 
-/* FORMULAIRES */
+
 .form-group { margin-bottom: 18px; }
 
 .form-label {
@@ -311,7 +311,7 @@ tbody td {
   gap: 14px;
 }
 
-/* BOUTONS */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -338,7 +338,7 @@ tbody td {
 
 .btn-full { width: 100%; justify-content: center; margin-top: 8px; }
 
-/* FILTRES */
+
 .filters {
   display: flex;
   gap: 12px;
@@ -388,7 +388,7 @@ tbody td {
   cursor: pointer;
 }
 
-/* BADGES */
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -407,7 +407,7 @@ tbody td {
 .badge-attente { background: rgba(200,169,110,0.15); color: var(--or); border: 0.5px solid rgba(200,169,110,0.3); }
 .badge-attente .badge-dot { background: var(--or); }
 
-/* BOUTONS PETITS */
+
 .actions { display: flex; gap: 6px; }
 
 .btn-sm {
@@ -427,7 +427,7 @@ tbody td {
 .btn-sm.danger { border-color: rgba(220,60,60,0.35); color: var(--danger); }
 .btn-sm.danger:hover { background: rgba(220,60,60,0.15); }
 
-/* PAGE VIDE / PLACEHOLDER */
+
 .page-vide {
   display: flex;
   flex-direction: column;

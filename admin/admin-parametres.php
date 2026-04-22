@@ -1,4 +1,4 @@
-<? include "../pdo.php";?>
+<?php include "../pdo.php"; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,17 +10,7 @@
 </head>
 <body>
 
-  <div class="topbar">
-    <div class="logo">
-      <div class="logo-dot"></div>
-      Socks Need Love
-      <span class="admin-tag">— admin</span>
-    </div>
-    <div class="topbar-right">
-      <span>Administrateur</span>
-      <div class="avatar">A</div>
-    </div>
-  </div>
+  <?php include 'topbar.php'; ?>
 
   <div class="layout">
 
@@ -28,14 +18,14 @@
 
     <main class="content">
 
-      <div class="page-title">Paramètres</div>
-      <div class="page-sub" style="margin-bottom:32px;">Configuration générale de la plateforme</div>
+      <h1 class="page-title">Paramètres</h1>
+      <p class="page-sub" style="margin-bottom:32px;">Configuration générale de la plateforme</p>
 
       <form action="admin-parametres-save.php" method="POST">
 
-        <!-- Infos du site -->
-        <div class="panel">
-          <div class="panel-title">Informations du site</div>
+        
+        <section class="panel">
+          <h2 class="panel-title">Informations du site</h2>
 
           <div class="form-group">
             <label class="form-label" for="nom_site">Nom du site</label>
@@ -49,7 +39,7 @@
 
           <div class="form-group">
             <label class="form-label" for="email_contact">Email de contact</label>
-            <input class="form-input" type="email" id="email_contact" name="email_contact" placeholder="contact@sockneedlove.be" />
+            <input class="form-input" type="email" id="email_contact" name="email_contact" placeholder="socksneedlove@outlook.com" />
           </div>
 
           <div class="form-row">
@@ -62,11 +52,11 @@
               <input class="form-input" type="url" id="lien_facebook" name="lien_facebook" placeholder="https://facebook.com/…" />
             </div>
           </div>
-        </div>
+        </section>
 
-        <!-- Inscriptions -->
-        <div class="panel">
-          <div class="panel-title">Inscriptions</div>
+       
+        <section class="panel">
+          <h2 class="panel-title">Inscriptions</h2>
 
           <div class="form-group">
             <label class="form-label" for="inscriptions_ouvertes">Statut des inscriptions</label>
@@ -83,11 +73,11 @@
               <option value="0">Désactivée — inscription immédiate</option>
             </select>
           </div>
-        </div>
+        </section>
 
-        <!-- Modération -->
-        <div class="panel">
-          <div class="panel-title">Modération des chaussettes</div>
+        
+        <section class="panel">
+          <h2 class="panel-title">Modération des chaussettes</h2>
 
           <div class="form-group">
             <label class="form-label" for="moderation_chaussettes">Publication des chaussettes</label>
@@ -96,48 +86,12 @@
               <option value="1">Modérée — chaque chaussette doit être validée par l'admin</option>
             </select>
           </div>
-        </div>
+        </section>
 
-        <!-- Échanges -->
-        <div class="panel">
-          <div class="panel-title">Fonctionnalité d'échanges</div>
+       
+        <section class="panel">
+          <h2 class="panel-title">Fonctionnalité d'échanges</h2>
 
           <div class="form-group">
             <label class="form-label" for="echanges_actifs">Statut des échanges</label>
-            <select class="form-select" id="echanges_actifs" name="echanges_actifs">
-              <option value="1">Activés — les utilisateurs peuvent proposer des échanges</option>
-              <option value="0">Désactivés — fonctionnalité masquée sur le site</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Maintenance -->
-        <div class="panel">
-          <div class="panel-title">Mode maintenance</div>
-
-          <div class="form-group">
-            <label class="form-label" for="maintenance">État du site</label>
-            <select class="form-select" id="maintenance" name="maintenance">
-              <option value="0">En ligne — site accessible normalement</option>
-              <option value="1">Maintenance — site inaccessible aux visiteurs</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="message_maintenance">Message affiché pendant la maintenance</label>
-            <textarea class="form-textarea" id="message_maintenance" name="message_maintenance" placeholder="Nous revenons très vite, nos chaussettes sont en cours de tri…"></textarea>
-          </div>
-        </div>
-
-        <div style="display:flex; gap:12px;">
-          <button class="btn btn-primary" type="submit">Enregistrer les paramètres</button>
-          <a href="admin-dashboard.php" class="btn btn-ghost">Annuler</a>
-        </div>
-
-      </form>
-
-    </main>
-  </div>
-
-</body>
-</html>
+            <select class="form-select" id

@@ -1,4 +1,4 @@
-<? include "../pdo.php";?>
+<?php include "../pdo.php"; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,78 +10,24 @@
 </head>
 <body>
 
-  <div class="topbar">
-    <div class="logo">
-      <div class="logo-dot"></div>
-      Socks Need Love
-      <span class="admin-tag">— admin</span>
-    </div>
-    <div class="topbar-right">
-      <span>Administrateur</span>
-      <div class="avatar">A</div>
-    </div>
-  </div>
+  <?php include 'topbar.php'; ?>
 
   <div class="layout">
 
-    <?php include 'sidebar.php'; ?> 
-    
+    <?php include 'sidebar.php'; ?>
+
     <main class="content">
 
-      <div class="page-title">Catégories de chaussettes</div>
-      <div class="page-sub" style="margin-bottom:28px;">Organise le catalogue de la plateforme</div>
+      <h1 class="page-title">Catégories de chaussettes</h1>
+      <p class="page-sub">Organise le catalogue de la plateforme</p>
 
       <div class="grid-form">
 
-        
-        <div class="panel">
-          <div class="panel-title">Nouvelle catégorie</div>
+        <section class="panel">
+          <h2 class="panel-title">Nouvelle catégorie</h2>
 
           <form action="admin-categories-create.php" method="POST">
 
             <div class="form-group">
               <label class="form-label" for="nom">Nom de la catégorie</label>
-              <input class="form-input" type="text" id="nom" name="nom" placeholder="ex : Chaussettes vintage…" required />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="description">Description</label>
-              <textarea class="form-textarea" id="description" name="description" placeholder="Décris cette catégorie en quelques mots…"></textarea>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="couleur">Couleur d'identification</label>
-              <input class="form-input" type="color" id="couleur" name="couleur" value="#A84E6A" style="height:42px;padding:4px 8px;cursor:pointer;" />
-            </div>
-
-            <button class="btn btn-primary btn-full" type="submit">Créer la catégorie</button>
-
-          </form>
-        </div>
-
-       
-        <div>
-          <div class="panel-title">Catégories existantes</div>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Couleur</th>
-                  <th>Nom</th>
-                  <th>Description</th>
-                  <th>Chaussettes</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-             
-            </table>
-          </div>
-        </div>
-
-      </div>
-
-    </main>
-  </div>
-
-</body>
-</html>
+              <input class="form-input" type="text" id="nom" name="nom" placeholder="ex : Chaussettes

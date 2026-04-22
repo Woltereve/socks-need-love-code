@@ -11,17 +11,7 @@
 <body>
 
   
-  <div class="topbar">
-    <div class="logo">
-      <div class="logo-dot"></div>
-      Socks Need Love
-      <span class="admin-tag">— admin</span>
-    </div>
-    <div class="topbar-right">
-      <span>Administrateur</span>
-      <div class="avatar">A</div>
-    </div>
-  </div>
+ <?php include 'topbar.php'; ?>
 
   <div class="layout">
      <?php include 'sidebar.php'; ?> 
@@ -30,10 +20,10 @@
 
       <div class="page-header">
         <div>
-          <div class="page-title">Ajouter une chaussette</div>
-          <div class="page-sub">Remplis les informations ci-dessous</div>
+          <h1 class="page-title">Ajouter une chaussette</h1>
+          <p class="page-sub">Remplis les informations ci-dessous</p>
         </div>
-        <a href="admin-chaussettes.html" class="btn btn-ghost">← Retour à la liste</a>
+        <a href="admin-chaussettes.php" class="btn btn-ghost">← Retour à la liste</a>
       </div>
 
       <div class="panel" style="max-width:680px;">
@@ -55,12 +45,12 @@
                 <option value="43-46">43–46</option>
                 <option value="unique">Unique</option>
               </select>
-            </div>
+</div>
             <div class="form-group">
               <label class="form-label" for="couleur">Couleur principale</label>
               <input class="form-input" type="text" id="couleur" name="couleur" placeholder="ex : bordeaux, rayé, à pois…" />
             </div>
-          </div>
+</div>
 
           <div class="form-row">
             <div class="form-group">
@@ -89,7 +79,7 @@
             <label class="form-label" for="categorie">Catégorie</label>
             <select class="form-select" id="categorie" name="categorie_id">
               <option value="">— Choisir une catégorie —</option>
-              <!-- Options remplies par PHP -->
+              
             </select>
           </div>
 

@@ -10,17 +10,7 @@
 </head>
 <body>
 
-  <div class="topbar">
-    <div class="logo">
-      <div class="logo-dot"></div>
-      Socks Need Love
-      <span class="admin-tag">— admin</span>
-    </div>
-    <div class="topbar-right">
-      <span>Administrateur</span>
-      <div class="avatar">A</div>
-    </div>
-  </div>
+ <?php include 'topbar.php'; ?>
 
   <div class="layout">
 
@@ -35,7 +25,7 @@
         </div>
       </div>
 
-      <!-- Filtres -->
+      
       <div class="filters">
         <select class="filter-select" name="type">
           <option value="">Tous les types</option>
@@ -59,7 +49,7 @@
         <button class="btn btn-ghost" type="submit">Filtrer</button>
       </div>
 
-      <!-- Tableau signalements -->
+      
       <div class="table-wrap">
         <table>
           <thead>
@@ -73,30 +63,7 @@
               <th>Actions</th>
             </tr>
           </thead>
-          <tbody>
-            <!-- Rempli dynamiquement par PHP -->
-            <!-- Exemple de structure d'une ligne :
-            <tr>
-              <td>Chaussette</td>
-              <td><a href="admin-chaussettes.php?id=1">Nom de la chaussette</a></td>
-              <td><a href="admin-users.php?id=2">Prénom Nom</a></td>
-              <td>Photo fausse</td>
-              <td>01/01/2025</td>
-              <td>
-                <span class="badge badge-attente">
-                  <span class="badge-dot"></span>En attente
-                </span>
-              </td>
-              <td>
-                <div class="actions">
-                  <a href="admin-signalements-ignore.php?id=1" class="btn-sm">Ignorer</a>
-                  <a href="admin-users-block.php?id=2" class="btn-sm">Bloquer l'auteur</a>
-                  <a href="admin-chaussettes-delete.php?id=1" class="btn-sm danger">Supprimer</a>
-                </div>
-              </td>
-            </tr>
-            -->
-          </tbody>
+          
         </table>
       </div>
 

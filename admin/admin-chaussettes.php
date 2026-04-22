@@ -11,17 +11,7 @@
 <body>
 
 
-  <div class="topbar">
-    <div class="logo">
-      <div class="logo-dot"></div>
-      Socks Need Love
-      <span class="admin-tag">— admin</span>
-    </div>
-    <div class="topbar-right">
-      <span>Administrateur</span>
-      <div class="avatar">A</div>
-    </div>
-  </div>
+ <?php include 'topbar.php'; ?>
 
   <div class="layout">
 
@@ -31,18 +21,18 @@
 
       <div class="page-header">
         <div>
-          <div class="page-title">Gestion des chaussettes</div>
-          <div class="page-sub">Catalogue complet de la plateforme</div>
+          <h1 class="page-title">Gestion des chaussettes</h1>
+          <p class="page-sub">Catalogue complet de la plateforme</p>
         </div>
         <a href="admin-chaussettes-add.html" class="btn btn-primary">+ Ajouter une chaussette</a>
       </div>
 
       
-      <div class="filters">
+      <main class="filters">
         <div class="search-wrap">
           <span class="search-icon">⌕</span>
           <input class="search-input" type="text" name="recherche" placeholder="Rechercher une chaussette…" />
-        </div>
+</main>
         <select class="filter-select" name="categorie">
           <option value="">Toutes les catégories</option>
           <!-- Options remplies par PHP -->

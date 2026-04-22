@@ -11,18 +11,7 @@
 <body>
 
  
-  <div class="topbar">
-    <div class="logo">
-      <div class="logo-dot"></div>
-      Socks Need Love
-      <span class="admin-tag">— admin</span>
-    </div>
-    <div class="topbar-right">
-      <span>Administrateur</span>
-      <div class="avatar">A</div>
-    </div>
-  </div>
-
+  <?php include 'topbar.php'; ?>
   <div class="layout">
 
      <?php include 'sidebar.php'; ?> 
