@@ -5,6 +5,7 @@
     <a class="nav-item" href="admin-users.php"><span class="nav-icon">♡</span> Utilisateurs</a>
     <a class="nav-item" href="admin-chaussettes.php"><span class="nav-icon">◈</span> Chaussettes</a>
     <a class="nav-item" href="admin-categories.php"><span class="nav-icon">✦</span> Catégories</a>
+    <a class="nav-item" href="admin-mon-profil.php"><span class="nav-icon">✦</span> Profil perso</a>
     
 
 

@@ -35,7 +35,7 @@
 </main>
         <select class="filter-select" name="categorie">
           <option value="">Toutes les catégories</option>
-          <!-- Options remplies par PHP -->
+         
         </select>
         <select class="filter-select" name="statut">
           <option value="">Tous les statuts</option>
