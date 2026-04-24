@@ -17,11 +17,9 @@
       <li><a href="catalogue.php" class="nav-link">Catalogue</a></li>
       <li><a href="socks.php" class="nav-link">Mes chaussettes</a></li>
       <li><a href="mon-compte.php" class="nav-link">Mon Compte</a></li>
-      <li><a href="contact.php" class="nav-link">Contact</a></li>
-      <!-- <li><a href="connection.php" class="nav-link">Connexion</a></li> -->
-    </ul>
-    <!-- <button class="btn-inscription">S'inscrire</button> -->
-    <a href="connection.php" class="btn-Connection">Se connecter</a>
- <a href="inscription.php" class="btn-inscription">S'inscrire</a>
+      <li><a href="contact.php" class="nav-link">Contact</a></li> 
+    
+    <a href="connection.php" class="btn">Se connecter</a>
+ <a href="inscription.php" class="btn">S'inscrire</a>
   </div>
 </nav>

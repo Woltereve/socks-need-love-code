@@ -18,10 +18,13 @@
       <p class="sock-age">Célibataire après 13 lavages</p>
 
       <div class="sock-tags">
-        <span>droit</span>
-        <span>noir</span>
-        <span>polyester</span>
-        <span>Taille 23</span>
+        
+        <li><a href="#" class="detail">droit</a></li>
+       <li><a href="#" class="detail">noir</a></li>
+       <li><a href="#" class="detail">polyester</a></li>
+       <li><a href="#" class="detail">Taille 23</a></li>
+        
+        
       </div>
 
       <p class="sock-bio">Rescapée d’un essorage trop brutal.</p>

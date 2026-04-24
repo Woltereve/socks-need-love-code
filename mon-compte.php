@@ -2,7 +2,7 @@
 
 
 <link rel="stylesheet" href="mon-compte.css" />
-
+ 
 <header>
   <h1 class="compte-title">Mon compte</h1>
 </header>
@@ -38,7 +38,7 @@
 
     <div class="compte-card">
       <h3>➕ Ajouter</h3>
-      <a href="#" class=lien_couleur>Ajouter une chaussette</a>
+      <a href="new_socks.php" class=lien_couleur>Ajouter une chaussette</a>
     </div>
 
     <div class="compte-card danger">

@@ -91,30 +91,18 @@ justify-content: flex-start;
   background-color: var(--color-rose-deep);
   color: var(--color-text);
 }
-.btn-inscription {
-  color: white;
-  font-size: 1.1rem;
-  padding: 0.6rem;
-  border-radius: 25px;
-  font-family: var(--font-H);
-  font-weight: normal;
-  text-decoration: underline;
-  text-transform: uppercase;
-  box-shadow: rgb(0, 0, 0) 3px 3px 15px 5px;
-  display: inline-block;
-}
 
-.btn-Connection {
-  color: white;
-  font-size: 1.1rem;
-  padding: 0.6rem;
-  border-radius: 25px;
-  font-family: var(--font-H);
-  font-weight: normal;
-  text-decoration: underline;
-  text-transform: uppercase;
-  box-shadow: rgb(0, 0, 0) 3px 3px 15px 5px;
-  display: inline-block;
+body > nav .btn {
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-family: var(--font-H);
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: rgb(0, 0, 0) 3px 3px 15px 5px;
+    display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
