@@ -91,7 +91,7 @@ h1::after {
 }
  
  
-/* TAGS */
+
 .sock-tags {
   display: flex;
   justify-content: center;
@@ -112,7 +112,7 @@ h1::after {
 }
  
  
-/* TEXTES CARTE*/
+
 .sock-bio {
   font-family: var(--font-corps);
   font-size: var(--fs-small);
@@ -148,7 +148,7 @@ h1::after {
 }
  
  
-/* BOUTON */
+
 .match-btn {
   background: var(--color-rose-deep);
   color: var(--color-rose-pale);
@@ -180,7 +180,7 @@ h1::after {
 }
  
  
-/* FOOTER */
+
 footer {
   text-align: center;
   padding: 30px 20px;

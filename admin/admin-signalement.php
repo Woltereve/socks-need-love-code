@@ -1,4 +1,4 @@
-<? include "../pdo.php";?>
+<?php include "../pdo.php";?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -18,12 +18,10 @@
 
     <main class="content">
 
-      <div class="page-header">
-        <div>
-          <div class="page-title">Signalements</div>
-          <div class="page-sub">Contenus et profils signalés par les utilisateurs</div>
-        </div>
-      </div>
+     
+          <h1 class="page-title">Signalements</h1>
+          <p class="page-sub">Contenus et profils signalés par les utilisateurs</p>
+      
 
       
       <div class="filters">

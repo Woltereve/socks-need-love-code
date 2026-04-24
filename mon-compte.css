@@ -1,10 +1,12 @@
  
     h3 { color: var(--color-rose-dusty);}
+
+    .lien_couleur {color:var(--rose-dust);}
+
     .compte-container {
       max-width: 900px;
       margin: 40px auto;
-      padding: 20px;
-    }
+      padding: 20px;}
 
     .compte-title {
       text-align: center;

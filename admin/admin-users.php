@@ -1,4 +1,4 @@
-<? include "../pdo.php";?>
+<?php include "../pdo.php";?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -18,12 +18,11 @@
     
     <main class="content">
 
-      <div class="page-header">
-        <div>
-          <div class="page-title">Gestion des utilisateurs</div>
-          <div class="page-sub">Liste de tous les membres inscrits</div>
-        </div>
-      </div>
+      
+        
+          <h1 class="page-title">Gestion des utilisateurs</h1>
+          <p class="page-sub">Liste de tous les membres inscrits</p>
+       
 
       
       <div class="filters">

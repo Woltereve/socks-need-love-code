@@ -92,7 +92,7 @@ justify-content: flex-start;
   color: var(--color-text);
 }
 .btn-inscription {
-  color: var(--color-rose-dusty);
+  color: white;
   font-size: 1.1rem;
   padding: 0.6rem;
   border-radius: 25px;
@@ -103,8 +103,9 @@ justify-content: flex-start;
   box-shadow: rgb(0, 0, 0) 3px 3px 15px 5px;
   display: inline-block;
 }
+
 .btn-Connection {
-  color: var(--color-rose-dusty);
+  color: white;
   font-size: 1.1rem;
   padding: 0.6rem;
   border-radius: 25px;

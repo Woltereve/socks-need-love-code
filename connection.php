@@ -1,5 +1,5 @@
 <?php include 'top.php'; ?>
-
+<link rel="stylesheet" href="connection.css" />
 <main>
   <h1>Connexion</h1>
 
@@ -13,7 +13,7 @@
 
     <button class="btn btn-primary" type="submit">Se connecter</button>
 
-    <a href="inscription.php">Pas encore de compte ? S'inscrire</a>
+    <a href="inscription.php" class= inscrire>Pas encore de compte ? S'inscrire</a>
 
   </form>
 </main>
