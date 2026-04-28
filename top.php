@@ -18,6 +18,7 @@
       <li><a href="socks.php" class="nav-link">Mes chaussettes</a></li>
       <li><a href="mon-compte.php" class="nav-link">Mon Compte</a></li>
       <li><a href="contact.php" class="nav-link">Contact</a></li> 
+       
     
     <a href="connection.php" class="btn">Se connecter</a>
  <a href="inscription.php" class="btn">S'inscrire</a>

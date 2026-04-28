@@ -40,7 +40,7 @@
 
     <div class="compte-card danger">
       <h3>🚪 Déconnexion</h3>
-      <a href="#" class=lien_couleur>Se déconnecter / Se désinscrire</a>
+      <a href="desinscription.php" class=lien_couleur>Se déconnecter / Se désinscrire</a>
     </div>
 
   
