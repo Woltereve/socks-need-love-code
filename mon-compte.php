@@ -21,10 +21,7 @@
       <a href="#" class=lien_couleur>Mes chaussettes échangées</a>
     </div>
 
-    <div class="compte-card">
-      <h3>⏳ En attente</h3>
-      <a href="#" class=lien_couleur>Chaussettes en attente</a>
-    </div>
+   
 
     <div class="compte-card">
       <h3>💬 Messages</h3>
@@ -43,13 +40,10 @@
 
     <div class="compte-card danger">
       <h3>🚪 Déconnexion</h3>
-      <a href="#" class=lien_couleur>Se déconnecter</a>
+      <a href="#" class=lien_couleur>Se déconnecter / Se désinscrire</a>
     </div>
 
-    <div class="compte-card danger">
-      <h3>❌ Supprimer compte</h3>
-      <a href="#" class=lien_couleur>Se désinscrire</a>
-    </div>
+  
 
   </div>
 

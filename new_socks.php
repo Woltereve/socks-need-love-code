@@ -21,12 +21,13 @@
     <input class="form-input" type="text" id="Matière" name="Matière" placeholder="Coton Bio" required />
  
     <label class="form-label" for="message">Message</label>
-<textarea class="form-textarea" id="message" name="message" placeholder="Décrivez la vie de votre chaussette" required></textarea>
+    <textarea class="form-textarea" id="message" name="message" placeholder="Décrivez la vie de votre chaussette" required></textarea>
 
 
-
+    <label class="nav-link" for="text">image </label>
+    <input class="file" type="file" id="image" name="image"  required />
   
-    <button class="btn btn-primary" type="submit">Laver'</button>
+    <button class="btn btn-primary" type="submit">Laver</button>
 
    
 
