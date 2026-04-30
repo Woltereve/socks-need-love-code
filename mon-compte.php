@@ -30,7 +30,8 @@
 
     <div class="compte-card">
       <h3>⚙️ Paramètres</h3>
-      <a href="#" class=lien_couleur>Modifier mon profil</a>
+      <!-- <a href="mon_profil.php">TEST</a> -->
+      <a href="mon_profil.php" class="lien_couleur">Modifier mon profil</a>
     </div>
 
     <div class="compte-card">
