@@ -21,6 +21,6 @@
        
     
     <a href="connection.php" class="btn">Se connecter</a>
- <a href="inscription.php" class="btn">S'inscrire</a>
+    <a href="inscription.php" class="btn">S'inscrire</a>
   </div>
 </nav>

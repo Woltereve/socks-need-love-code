@@ -20,3 +20,7 @@
 </html>
 
 <?php include 'bottom.php'; ?>
+
+</div>
+        <a href="admin-chaussettes-add.html" class="btn btn-primary">+ Ajouter une chaussette</a>
+      </div>

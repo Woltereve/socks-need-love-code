@@ -23,9 +23,7 @@
         <div>
           <h1 class="page-title">Gestion des chaussettes</h1>
           <p class="page-sub">Catalogue complet de la plateforme</p>
-        </div>
-        <a href="admin-chaussettes-add.html" class="btn btn-primary">+ Ajouter une chaussette</a>
-      </div>
+        
 
       
       <main class="filters">
