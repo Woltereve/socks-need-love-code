@@ -1,7 +1,6 @@
 <?php
 require "../pdo.php";
-// echo "ADMIN PDO OK";?>
-
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -60,7 +59,7 @@ require "../pdo.php";
             </thead>
            
           </table>
-          <a href="admin-users.html" class="btn btn-ghost" style="margin-top:14px;">Voir tous les utilisateurs</a>
+          <a href="admin-users.php" class="btn btn-ghost" style="margin-top:14px;">Voir tous les utilisateurs</a>
 </section>
        
 

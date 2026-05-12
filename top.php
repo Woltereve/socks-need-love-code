@@ -15,7 +15,8 @@
     <ul class="nav-menu">
       <li><a href="acceuil.php" class="nav-link">Accueil</a></li>
       <li><a href="catalogue.php" class="nav-link">Catalogue</a></li>
-      <li><a href="socks.php" class="nav-link">Mes chaussettes</a></li>
+      <!-- <li><a href="socks.php" class="nav-link">Mes chaussettes</a></li> -->
+       <!-- pas necessaire d'etre dans la nav elle est dans mon compte -->
       <li><a href="mon-compte.php" class="nav-link">Mon Compte</a></li>
       <li><a href="contact.php" class="nav-link">Contact</a></li> 
        

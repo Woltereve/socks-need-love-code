@@ -8,7 +8,7 @@
       <h2> Dating Socks ... C'est quoi ?</h2>
         
       <h3>Parce que toutes les chaussettes ont droit à une seconde chance...❤️</h3>
-      <img src="asset/images/chaussette_de_garde.jpeg" alt="acceuil" class="acceuil_photo">
+      <img src="asset/images/chaussette_acceuil-sm.webp" alt="acceuil" class="acceuil_photo">
 
           
 <p>C'est un site de rencontre, pour chaussettes dépareillées.</p>
