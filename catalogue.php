@@ -5,7 +5,7 @@ require "pdo.php";
 
 <main>
   <article class="sock-card">
-    <img src="asset/images/chien_noel-sm.webp" alt="chaussette rose et chien de noël" />
+    <img src="asset/images-SM/chien_noel-sm.webp" alt="chaussette rose et chien de noël" />
 
     <h2>Rose et chien de noël</h2>
     <p class="sock-age">Célibataire depuis 67 lavages</p>

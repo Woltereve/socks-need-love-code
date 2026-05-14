@@ -11,17 +11,17 @@
 
 <nav class="navbar">
   <div class="nav-container">
-    <img src="asset/images/logo.svg" alt="logo" class="logo" />
+    <img src="asset/images-SM/logo.svg" alt="logo" class="logo" />
     <ul class="nav-menu">
       <li><a href="acceuil.php" class="nav-link">Accueil</a></li>
       <li><a href="catalogue.php" class="nav-link">Catalogue</a></li>
-      <!-- <li><a href="socks.php" class="nav-link">Mes chaussettes</a></li> -->
-       <!-- pas necessaire d'etre dans la nav elle est dans mon compte -->
       <li><a href="mon-compte.php" class="nav-link">Mon Compte</a></li>
       <li><a href="contact.php" class="nav-link">Contact</a></li> 
-       
+       </ul>
     
+    <div style="margin-left: auto; display: flex; gap: 10px;">
     <a href="connection.php" class="btn">Se connecter</a>
     <a href="inscription.php" class="btn">S'inscrire</a>
+</div>
   </div>
 </nav>

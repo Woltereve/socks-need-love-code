@@ -2,8 +2,8 @@
 
   <link rel="stylesheet" href="mon-compte.css" />
   <title>Mon compte</title>
-</head>
-<body>
+
+
   
   
   
@@ -51,8 +51,8 @@
       
       
     </div>
-  </body>
-  </html>
+  
+  
 
 </main>
 

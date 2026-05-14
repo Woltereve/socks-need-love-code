@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="style.css">
 <main>
   <article class="sock-card">
-    <img src="asset/images/chien_noel-sm.webp" alt="chaussette rose et chien de noël" />
+    <img src="asset/image-L/chien_noel-lg.webp" alt="chaussette rose et chien de noël" />
     <h1> Bio</h1>
 
     <h2>Chien au chapeau de noël</h2>
