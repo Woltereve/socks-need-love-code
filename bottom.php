@@ -3,8 +3,8 @@
  
  <footer>
          <ul class=footer-ul>
-                 <li><a href="desinscription.php" class= "footer_l">Désinscription</a></li>
-                 <li> <a href="desinscription.php" class= "footer_l">Déconnection</a></li>
+                 <li><a href="desinscription.php" class= "footer_li">Désinscription</a></li>
+                 <li> <a href="desinscription.php" class= "footer_li">Déconnection</a></li>
                  <li><a href="contact.php" class= "footer_li">Contact</a></li>
                  
                 </ul>

@@ -1,14 +1,8 @@
 <?php include 'top.php'; ?>
 
-    <link rel="stylesheet" href="inscription.css" />
-   
-<head>
-    <title>Mon profil</title>
-</head>
-<body>
     
 <div class="form-container">
-    <form action="modifier_profil.php" method="post" enctype="multipart/form-data">
+    <form action="modifier_profil.php" method="post" enctype="multipart/form-data"> 
 
        
       <label class="form-label" for="nom">Nom</label>
@@ -28,18 +22,9 @@
 
       <button class="btn btn-primary" type="submit">Enregistrer</button>
       
-
     </form>
+    
   </div>
 </main>
-
-</body>
-
-
-
-
-
-
-
 
 <?php include 'bottom.php'; ?>

@@ -87,11 +87,9 @@
             </select>
           </div>
         </section>
+      </form>
+    </main>
+  </div>
 
-       
-        <section class="panel">
-          <h2 class="panel-title">Fonctionnalité d'échanges</h2>
-
-          <div class="form-group">
-            <label class="form-label" for="echanges_actifs">Statut des échanges</label>
-            <select class="form-select" id
+</body>
+</html>

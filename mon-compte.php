@@ -1,13 +1,6 @@
 <?php include 'top.php'; ?>
 
-  <link rel="stylesheet" href="mon-compte.css" />
-  <title>Mon compte</title>
-
-
-  
-  
-  
-  <header>
+ <header>
     <h1 class="compte-title">Mon compte</h1>
   </header>
   
@@ -48,13 +41,13 @@
         <a href="desinscription.php" class="lien_couleur">Se déconnecter / Se désinscrire</a>
       </div>
       
-      
-      
     </div>
+  </main>
+  <?php include 'bottom.php'; ?>
   
+      
+      
   
 
-</main>
 
 
-<?php include 'bottom.php'; ?>

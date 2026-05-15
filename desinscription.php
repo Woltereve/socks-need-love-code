@@ -1,19 +1,15 @@
 <?php include 'top.php'; ?>
 
-<body>
-    
-<form action="post"></form>
+
+ <main>  
+<form action= "deconnexion.php" method="POST">
    <button class="nav-link" type="submit">Déconnection</button>
+</form>
 
-
-<form action="post"></form>
+<form action="desinscription.php" method="POST">
    <button class="nav-link" type="submit">Se désinscrire</button>
 
-</body>
-</html>
+</form>
+</main>
 
 <?php include 'bottom.php'; ?>
-
-</div>
-        <a href="admin-chaussettes-add.html" class="btn btn-primary">+ Ajouter une chaussette</a>
-      </div>

@@ -30,4 +30,4 @@
 
             <div class="form-group">
               <label class="form-label" for="nom">Nom de la catégorie</label>
-              <input class="form-input" type="text" id="nom" name="nom" placeholder="ex : Chaussettes
+              <input class="form-input" type="text" id="nom" name="nom" placeholder="ex : Chaussettes />
