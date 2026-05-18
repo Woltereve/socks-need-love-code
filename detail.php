@@ -22,16 +22,29 @@ Une relation simple et confortable</p>
 Les pas trop pressés
 Les tiroirs froids et silencieux</p>
 
-    <ul class="sock-tags">
-      <a href="catalogue.php?tag=droit" class="tag">droit</a>
-      <a href="catalogue.php?tag=noir" class="tag">noir</a>
-      <a href="catalogue.php?tag=polyester" class="tag">polyester</a>
-      <a href="catalogue.php?tag=23" class="tag">Taille 23</a>
-      <a href="catalogue.php"  class="nav-link">Vers catalogue</a>
+
+ <div class="sock-tags">
+        
+        
+   
+   <ul class="sock-tags">
+     <li> <a href="catalogue.php?tag=droit" class="tag">droit</a></li>
+     <li><a href="catalogue.php?tag=noir" class="tag">noir</a></li>
+     <li><a href="catalogue.php?tag=23" class="tag">Taille 23</a></li>
+     <li><a href="catalogue.php"  class="nav-link">Vers catalogue</a></li>
     </ul>
+  </div>
   </article>
 </main>
 
+
+
+
+    
+
+   
+</div>
+ 
 
 
 
