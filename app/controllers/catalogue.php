@@ -1,8 +1,26 @@
 <?php 
-include 'top.php'; 
 require "pdo.php";
-?>
 
+function catalog_detail()
+{
+  
+    $data = [
+        'page_title' => 'Ma lib de singe',
+        'items' => [
+            [
+                'id'=> 1,
+                'label' => 'bouteille'
+                ],
+                [
+                    'id'=> 2,
+                    'label' => 'chat'
+                    ],
+                    ]
+                    ];
+
+    return render('app/views/catalog.php', $data);
+}
+?>
 <main>
   <div class="sock-grid">
     <article class="sock-card">
@@ -32,4 +50,3 @@ require "pdo.php";
 </article>
 </div>
 </main>
-<?php include 'bottom.php'; ?>
