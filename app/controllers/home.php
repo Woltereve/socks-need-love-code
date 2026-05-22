@@ -1,4 +1,5 @@
 <?php
 function home_index (){
-    return '';
+    return render('app/views/home.php', ['chaton' => 'azertyuio']);
+    
 }

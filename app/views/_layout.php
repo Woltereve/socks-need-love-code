@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="acceuil.css" />
 </head>
 <body>
-
-<nav class="navbar">
-  <div class="nav-container">
+  <header>
+  <nav class="navbar">
+    <div class="nav-container">
     <img src="asset/images-SM/logo.svg" alt="logo" class="logo" />
     <ul class="nav-menu">
       <li><a href="/" class="nav-link">Accueil</a></li>
@@ -25,12 +25,18 @@
 </div>
     </div>
 </nav>
+</header>
+<main>
+<?php echo $page_content;?>
 
+
+
+</main>
  <footer>
          <ul class=footer-ul>
-                 <li><a href="desinscription.php" class= "footer_li">Désinscription</a></li>
-                 <li> <a href="desinscription.php" class= "footer_li">Déconnection</a></li>
-                 <li><a href="contact.php" class= "footer_li">Contact</a></li>
+                 <li><a href="/desinscription" class= "footer_li">Désinscription</a></li>
+                 <li> <a href="/deconnection" class= "footer_li">Déconnection</a></li>
+                 <li><a href="/contact" class= "footer_li">Contact</a></li>
                  
                 </ul>
                 <p>&copy; <?php echo date ('Y') ; ?></p>
