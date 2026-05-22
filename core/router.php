@@ -64,11 +64,11 @@ function route(array $http_segments): array
 function run(array $route, string $base_path): string
 {
     // Le front controller connaît la racine du projet.
-    $base_path = rtrim($base_path, '/');
+    $base_path = rtrim($base_path, '/\\');
 
     // Le nom de l'entité détermine le fichier controller à charger.
     // Exemple : item → controllers/item.php
-    $controller_filepath = $base_path . '/controllers/' . $route['entity'] . '.php';
+    $controller_filepath = $base_path . DIRECTORY_SEPARATOR . 'controllers' . DIRECTORY_SEPARATOR . $route['entity'] . '.php';
 
     // Le nom de l'entité et le nom de l'action déterminent la fonction à appeler.
     // Exemple : item + show → item_show()
