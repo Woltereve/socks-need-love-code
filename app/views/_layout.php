@@ -1,31 +1,42 @@
-<!-- <!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Monkey Chess - <?= $page_title;?></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Catalog of fictional books about monkey chess.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dating Socks</title>
+  <link rel="stylesheet" href="styles/all-variables.css" />
+  <link rel="stylesheet" href="acceuil.css" />
 </head>
-
 <body>
-  <header>
-    <p><strong>Monkey Chess Library</strong></p>
 
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="books.html" aria-current="page">Catalog</a></li>
-        <li><a href="book-detail.html">Featured book</a></li>
-      </ul>
-    </nav>
-  </header>
+<nav class="navbar">
+  <div class="nav-container">
+    <img src="asset/images-SM/logo.svg" alt="logo" class="logo" />
+    <ul class="nav-menu">
+      <li><a href="/" class="nav-link">Accueil</a></li>
+      <li><a href="/catalogue" class="nav-link">Catalogue</a></li>
+      <li><a href="/profile" class="nav-link">Mon Compte</a></li>
+      <li><a href="/contact" class="nav-link">Contact</a></li> 
+       </ul>
+    
+    <div class="nav-buttons">
+    <a href="/connection" class="btn">Se connecter</a>
+    <a href="/inscription" class="btn">S'inscrire</a>
+</div>
+    </div>
+</nav>
 
-  <main>
-    <?php echo $page_content; ?>
-  </main>
-
-  <footer>
-    <p>Monkey Chess Library is a fictional project for learning HTML and PHP.</p>
-  </footer>
-</body>
-</html> -->
+ <footer>
+         <ul class=footer-ul>
+                 <li><a href="desinscription.php" class= "footer_li">Désinscription</a></li>
+                 <li> <a href="desinscription.php" class= "footer_li">Déconnection</a></li>
+                 <li><a href="contact.php" class= "footer_li">Contact</a></li>
+                 
+                </ul>
+                <p>&copy; <?php echo date ('Y') ; ?></p>
+                <a href="mentions-legales.html">Mentions légales</a>
+          <p>”Un projet imaginé par Eve ” </p>
+          <strong>”Parce que personne ne devrait finir seul au fond d'un tambour de machine à laver.” 🧦</strong>
+        </footer>
+        </body>
+</html>

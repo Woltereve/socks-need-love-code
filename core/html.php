@@ -45,14 +45,14 @@ function render(string $filepath, array $data = []): string
     extract($data);
 
     // On démarre une mémoire temporaire pour capturer ce que la vue affiche.
-    // ob_start();
+    ob_start();
 
     // La vue est exécutée ici.
     // Son HTML est capturé au lieu d'être envoyé directement au navigateur.
     require $filepath;
 
     // Le HTML capturé est récupéré sous forme de chaîne de caractères.
-    // return ob_get_clean();
+    return ob_get_clean();
 }
 
 function escape(string $value): string

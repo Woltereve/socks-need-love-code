@@ -109,7 +109,11 @@ body>.navbar {
   color: var(--color-text);
 }
 
-
+.nav-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
 
 @media screen and (max-width: 768px) {
   .nav-menu {
