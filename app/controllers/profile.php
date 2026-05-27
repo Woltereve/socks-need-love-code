@@ -1,4 +1,5 @@
 <?php
-function profile_index (){
-    return '';
+function inscription_index($pdo) {
+    return render(__DIR__ . '/../views/inscription.php', []);
 }
+?>

@@ -1,7 +1,10 @@
-<?php include 'top.php'; ?>
-<link rel="stylesheet" href="connection.css" />
-<main>
+
+
   <h1>Connexion</h1>
+
+  <?php if (isset($error)) { ?>
+    <p style="color:red;"><?= $error ?></p>
+  <?php } ?>
 
   <form action="login-check.php" method="POST">
 
@@ -16,6 +19,5 @@
     <a href="inscription.php" class= inscrire>Pas encore de compte ? S'inscrire</a>
 
   </form>
-</main>
+</div>
 
-<?php include 'bottom.php'; ?>

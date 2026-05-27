@@ -1,6 +1,4 @@
-<?php include 'top.php'; ?>
-<link rel="stylesheet" href="inscription.css" />
-<main>
+<div class="form-container">
   <h1>Inscription </h1>
 
   <form action="login-check.php" method="POST">
@@ -19,10 +17,5 @@
   <label class="form-label" for="password">Confirmez votre mot de passe</label>
     <input class="form-input" type="password" id="password_confirm" name="password_confirm" placeholder="••••••••" required />
     <button class="btn btn-primary" type="submit">S'inscrire'</button>
-
-   
-
   </form>
-</main>
-
-<?php include 'bottom.php'; ?>
+</div>

@@ -1,13 +1,14 @@
 <article class="sock-card">
-    <img src="asset/image-L/chien_noel-lg.webp" alt="chaussette rose et chien de noël" />
-    <h1> Bio</h1>
+    <img src="<?= '/' . str_replace('\\', '/', $item['main_image']) ?>" alt="<?= $item['label'] ?>" />
 
-    <h2>Chien au chapeau de noël</h2>
-    <p class="sock-age">Célibataire depuis 67 lavages</p>
+    <h2><?= $item ['label']?></h2>
+    <p><?= $item ['content']?></p>
+    <p> <?= $item ['description']?></p>
+
+   
 
 
-
-<p>« Je suis restée seule au fond du panier, mais je n’ai jamais cessé d’espérer.
+<!-- <p>« Je suis restée seule au fond du panier, mais je n’ai jamais cessé d’espérer.
 J’aime la douceur, les pas lents et les retours à la maison.
 Si tu me choisis, je promets de tenir chaud sans jamais serrer trop fort. »</p>
 
@@ -17,18 +18,17 @@ Un pied patient
 Une relation simple et confortable</p>
 <p>❌ Red flags
 Les pas trop pressés
-Les tiroirs froids et silencieux</p>
-
+Les tiroirs froids et silencieux</p> -->
 
  <div class="sock-tags">
         
         
    
    <ul class="sock-tags">
-     <li> <a href="catalogue.php?tag=droit" class="tag">droit</a></li>
+     <!-- <li> <a href="catalogue.php?tag=droit" class="tag">droit</a></li>
      <li><a href="catalogue.php?tag=noir" class="tag">noir</a></li>
-     <li><a href="catalogue.php?tag=23" class="tag">Taille 23</a></li>
-     <li><a href="catalogue.php"  class="nav-link">Vers catalogue</a></li>
+     <li><a href="catalogue.php?tag=23" class="tag">Taille 23</a></li> -->
+     <a href="/catalogue"  class="nav-link">Vers catalogue</a>
     </ul>
   </div>
   </article>
