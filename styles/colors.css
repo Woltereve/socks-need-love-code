@@ -11,6 +11,7 @@
   --color-rose-dusty: #D4879C;
   --color-rose-deep:  #A84E6A;
   --prune :           #7e5b6e;
+  --bordeau-nuit:     #3d2b31;
   /* Neutres */
   --color-muted:      #888888;
 
@@ -23,4 +24,14 @@
   /* Utilitaires */
   --radius:           12px;
   --radius-pill:      25px;
+  
+  /* variable taille titre */
+
+  --fs-h1: 3rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.5rem;
 }
+
+
+
+  

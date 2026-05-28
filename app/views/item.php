@@ -1,34 +1,32 @@
-<article class="sock-card">
-    <img src="<?= '/' . str_replace('\\', '/', $item['main_image']) ?>" alt="<?= $item['label'] ?>" />
+<div class="sock-detail">
+  <article class="sock-card">
 
-    <h2><?= $item ['label']?></h2>
-    <p><?= $item ['content']?></p>
-    <p> <?= $item ['description']?></p>
+    <div class="sock-photo">
+        <img src="/<?= str_replace('\\', '/', $item['main_image']) ?>" alt="<?= $item['label'] ?>" />
+    </div>
 
-   
+    <div class="sock-info">
+        <h2><?= $item['label'] ?></h2>
 
+        <p class="sock-bio"><?= $item['description'] ?></p>
 
-<!-- <p>« Je suis restée seule au fond du panier, mais je n’ai jamais cessé d’espérer.
-J’aime la douceur, les pas lents et les retours à la maison.
-Si tu me choisis, je promets de tenir chaud sans jamais serrer trop fort. »</p>
-
-<p>💕 Ce que je recherche
-Une chaussette gentille, peu importe son passé
-Un pied patient
-Une relation simple et confortable</p>
-<p>❌ Red flags
-Les pas trop pressés
-Les tiroirs froids et silencieux</p> -->
-
- <div class="sock-tags">
         
-        
-   
-   <ul class="sock-tags">
-     <!-- <li> <a href="catalogue.php?tag=droit" class="tag">droit</a></li>
-     <li><a href="catalogue.php?tag=noir" class="tag">noir</a></li>
-     <li><a href="catalogue.php?tag=23" class="tag">Taille 23</a></li> -->
-     <a href="/catalogue"  class="nav-link">Vers catalogue</a>
-    </ul>
-  </div>
-  </article>
+        <div class="sock-tags">
+    <a href="/catalogue?color=<?= $item['color'] ?>" class="tag"><?= $item['color'] ?></a>
+    <a href="/catalogue?size=<?= $item['size'] ?>" class="tag"><?= $item['size'] ?></a>
+    <a href="/catalogue?material=<?= $item['material'] ?>" class="tag"><?= $item['material'] ?></a>
+    <a href="/catalogue?side=<?= $item['side'] ?>" class="tag"><?= $item['side'] ?></a>
+</div>
+
+        <p class="profil">💕 Ce qu'elle recherche<br><?= $item['looking_for'] ?></p>
+
+        <p class="sock-bio">🧬 Personnalité<br><?= $item['personality'] ?></p>
+
+        <p class="sock-bio">❌ Red flags<br><?= $item['red_flag'] ?></p>
+
+        <a href="/catalogue" class="nav-link">← Vers catalogue</a>
+    </div>
+
+</article>
+  
+</div>

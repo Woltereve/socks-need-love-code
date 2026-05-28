@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dating Socks</title>
   <link rel="stylesheet" href="/styles/all-variables.css" />
-  <link rel="stylesheet" href="/socks.css" />
-  <link rel="stylesheet" href="/acceuil.css" />
+  <link rel="stylesheet" href="/forms.css" />
+  <link rel="stylesheet" href="/main.css" />
 </head>
 <body>
   <header>
   <nav class="navbar">
     <div class="nav-container">
     <img src="/asset/images-SM/logo.svg" alt="logo" class="logo" />
+    <ul class="nav-menu">
       <li><a href="/" class="nav-link">Accueil</a></li>
       <li><a href="/catalogue" class="nav-link">Catalogue</a></li>
       <li><a href="/profile" class="nav-link">Mon Compte</a></li>

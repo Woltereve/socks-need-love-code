@@ -1,4 +1,4 @@
-<?php include 'top.php'; ?>
+
 <link rel="stylesheet" href="style.css">
 <main>
   <article class="sock-card">
@@ -49,4 +49,3 @@ Les tiroirs froids et silencieux</p>
 
 
 
-<?php include 'bottom.php'; ?>

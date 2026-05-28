@@ -16,7 +16,7 @@ form {
   gap: 15px;
   max-width: 500px;
   margin: 40px auto;
-  border: 3px solid var(--color-rose-dusty);
+  border: 3px solid var(--color-gold);
   border-radius: 6px;
 }
 
@@ -61,7 +61,19 @@ form {
   color: var(--color-rose-dusty);
 }
 
+.btn btn-primary btn-machine {
+   width: fit-content;
+    margin: 0 auto;
 
+}
+
+.btn-machine {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 12px 30px;
+}
+    
 .inscrire {
   color: var(--color-rose-dusty);
 }
