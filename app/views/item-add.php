@@ -39,15 +39,21 @@
 
     <label class="form-label" for="category_id">Catégorie</label>
     <select class="form-input" id="category_id" name="category_id">
+
       <?php foreach ($categories as $category) { ?>
        <option value="<?= $category['id'] ?>"><?= $category['label'] ?></option>
        <?php } ?>
-       </select>
-    <label class="form-label" for="theme_id">Thème</label>
-    <select class="form-input" id="theme_id" name="theme_id">
+
+      </select>
+       
+       <label class="form-label" for="theme_id">Thème</label>
+       <select class="form-input" id="theme_id" name="theme_id">
+
      <?php foreach ($themes as $theme) { ?>
     <option value="<?= $theme['id'] ?>"><?= $theme['label'] ?></option>
   <?php } ?>
+
+  
 </select>
       
    <button class="btn btn-primary btn-machine" type="submit">A la machine</button>

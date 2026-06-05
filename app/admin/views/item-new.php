@@ -1,23 +1,4 @@
-<? include "../pdo.php";?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-  <title>Admin — Ajouter une chaussette · Socks Need Love</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="admin.css" />
-
-<body>
-
-  
- <?php include 'topbar.php'; ?>
-
-  <div class="layout">
-     <?php include 'sidebar.php'; ?> 
-   
-    <main class="content">
+<main class="content">
 
       <div class="page-header">
         <div>
@@ -81,6 +62,11 @@
             <select class="form-select" id="categorie" name="categorie_id">
               <option value="">— Choisir une catégorie —</option>
               
+
+              <?php foreach ($categories as $category) { ?>
+       <option value="<?= $category['id'] ?>"><?= $category['label'] ?></option>
+       <?php } ?>
+                 
             </select>
           </div>
 
@@ -111,9 +97,3 @@
         </form>
 
       </div>
-
-    </main>
-  </div>
-
-</body>
-

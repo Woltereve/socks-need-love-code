@@ -29,8 +29,8 @@ function slugify($text) {
     $text = preg_replace('/[^a-z0-9-]/', '', $text);
     return $text;
 }
-function get_all_categories($pdo) {
-    $stmt = $pdo->query('SELECT * FROM category');
+function get_all_materials($pdo) {
+    $stmt = $pdo->query('SELECT * FROM material');
     return $stmt->fetchAll();
 }
 function get_all_themes($pdo) {

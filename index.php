@@ -7,7 +7,7 @@ require 'core/router.php';
 require 'core/html.php';
 require 'pdo.php';
 
-require 'config/database.php';
+// require 'config/database.php';
 
 $base = __DIR__ . '/app';
 
@@ -15,9 +15,9 @@ $segments = http_in($_SERVER['REQUEST_URI']);
 
 if (isset($segments[0]) && $segments[0] === 'admin') {
 
-    if (empty($_SESSION['user_id'])) {
-        redirect('/login');
-    }
+    // if (empty($_SESSION['user_id'])) {
+    //     redirect('/login');
+    // }
 
     $base = __DIR__ . '/app/admin';
 

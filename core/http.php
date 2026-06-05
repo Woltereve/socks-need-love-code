@@ -31,7 +31,8 @@
 
 function http_in(string $request_uri): array
 {
-    // La query string n'identifie pas la route.
+    
+// La query string n'identifie pas la route.
     $position = strpos($request_uri, '?');
 
     if ($position !== false) {

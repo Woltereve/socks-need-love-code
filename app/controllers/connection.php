@@ -26,3 +26,5 @@ function connection_logout($pdo) {
     session_destroy();
     redirect('/');
 }
+?>
+
