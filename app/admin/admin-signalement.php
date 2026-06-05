@@ -14,20 +14,21 @@
 
   <div class="layout">
 
-    <?php $page = 'signalements'; include 'sidebar.php'; ?>
+    <?php $page = 'signalements';
+include 'sidebar.php'; ?>
 
     <main class="content">
 
      
-          <h1 class="page-title">Signalements</h1>
+      <h1 class="page-title">Signalements</h1>
           <p class="page-sub">Contenus et profils signalés par les utilisateurs</p>
       
 
       
-      <div class="filters">
+<div class="filters">
         <select class="filter-select" name="type">
           <option value="">Tous les types</option>
-          <option value="chaussette">Chaussette</option>
+            <option value="chaussette">Chaussette</option>
           <option value="profil">Profil utilisateur</option>
         </select>
         <select class="filter-select" name="motif">

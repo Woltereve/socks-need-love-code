@@ -1,8 +1,8 @@
 <?php
-function insert_item($pdo, $label, $description, $slug, $color, $size, $material, $side, $personality, $looking_for, $red_flag, $category_id, $main_image) {
+function insert_item($pdo, $label, $description, $slug, $color, $size, $material_id, $side, $personality, $looking_for, $red_flag, $main_image) {
     $stmt = $pdo->prepare('
-        INSERT INTO item (label, description, slug, color, size, material, side, personality, looking_for, red_flag, category_id, main_image, statut, created_at, updated_at)
-VALUES (:label, :description, :slug, :color, :size, :material, :side, :personality, :looking_for, :red_flag, :category_id, :main_image, 1, NOW(), NOW())
+        INSERT INTO item (label, description, slug, color, size, material_id, side, personality, looking_for, red_flag, main_image, statut, created_at, updated_at)
+        VALUES (:label, :description, :slug, :color, :size, :material_id, :side, :personality, :looking_for, :red_flag, :main_image, 1, NOW(), NOW())
     ');
     $stmt->execute([
         ':label'       => $label,
@@ -10,16 +10,18 @@ VALUES (:label, :description, :slug, :color, :size, :material, :side, :personali
         ':slug'        => $slug,
         ':color'       => $color,
         ':size'        => $size,
-        ':material'    => $material,
+        ':material_id' => $material_id,
         ':side'        => $side,
         ':personality' => $personality,
         ':looking_for' => $looking_for,
         ':red_flag'    => $red_flag,
-        ':category_id' => $category_id,
-        ':main_image' => $main_image,
+        ':main_image'  => $main_image,
     ]);
 }
-
+function get_all_sizes($pdo) {
+    $stmt = $pdo->query('SELECT * FROM size');
+    return $stmt->fetchAll();
+}
 function slugify($text) {
     // minuscules
     $text = strtolower($text);
