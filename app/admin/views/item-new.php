@@ -57,7 +57,7 @@
         <label class="form-label" for="description">Description / anecdote</label>
         <textarea class="form-textarea" id="description" name="description" placeholder="Son histoire, sa personnalité, ce qu'elle recherche…"></textarea>
       </div>
-<div class="form-group">.
+<div class="form-group">
     <label class="form-label" for="side">Côté</label>
     <select class="form-input" id="side" name="side">
       <option value="droit">Droit</option>
@@ -66,22 +66,22 @@
     </select>
     </div>
 
-<div class="form-group">.
+<div class="form-group">
     <label class="form-label" for="personality">Personnalité</label>
     <textarea class="form-textarea" id="personality" name="personality" placeholder="douce, folle, perchée…"></textarea>
   </div>
 
-    <div class="form-group">.
+    <div class="form-group">
       <label class="form-label" for="looking_for">Ce qu'elle recherche</label>
     <textarea class="form-textarea" id="looking_for" name="looking_for" placeholder="l'amour, un double, un tirroir confortable..."></textarea>
 </div>
-<div class="form-group">.
+<div class="form-group">
    <label class="form-label" for="red_flag">Red flags</label>
     <textarea class="form-textarea" id="red_flag" name="red_flag" placeholder="claquettes/chaussettes…"></textarea>
 </div>
 
   
-    <div class="form-group">.
+    <div class="form-group">
         <label class="form-label" for="photo">Photo</label>
         <input class="form-input" type="file" id="photo" name="main_image" accept="image/*" style="padding:8px;" />
 </div>

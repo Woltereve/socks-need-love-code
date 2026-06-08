@@ -15,9 +15,10 @@ $segments = http_in($_SERVER['REQUEST_URI']);
 
 if (isset($segments[0]) && $segments[0] === 'admin') {
 
-    // if (empty($_SESSION['user_id'])) {
-    //     redirect('/login');
-    // }
+      if (empty($_SESSION['user_id']) && ($segments[1] ?? '') !== 'login') {
+        redirect('/admin/login');
+    
+    }
 
     $base = __DIR__ . '/app/admin';
 
