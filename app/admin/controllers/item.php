@@ -6,7 +6,7 @@ function item_new($pdo) {
     $themes = get_all_themes($pdo);
     $sizes = get_all_sizes($pdo);
 
-    return render (__DIR__ . '/../views/item-new.php',[
+    return render (__DIR__ . '/../views/item-alter.php',[
     'materials' => $materials ,
     'themes' => $themes,
     'sizes' => $sizes
@@ -21,14 +21,15 @@ function item_edit ($pdo,$slug){
     $themes = get_all_themes($pdo);
     $sizes = get_all_sizes($pdo);
     
-    return render ( __DIR__. '/../views/item-edit.php',[
+    return render ( __DIR__. '/../views/item-alter.php',[
     'item' =>$item,
     'materials' => $materials,
     'themes' => $themes,
     'sizes' => $sizes   ]);
-    }
+}
   
-function item_create($pdo) {
+
+function item_save($pdo) {
     $label       = $_POST['label'];
     $description = $_POST['description'];
     $color       = $_POST['color'];
@@ -49,7 +50,14 @@ function item_create($pdo) {
         move_uploaded_file($_FILES['main_image']['tmp_name'], $dest);
         $main_image = 'asset/images-SM/' . $filename;
     }
-    insert_item($pdo, $label, $description, $slug, $color, $size, $material_id, $side, $personality, $looking_for, $red_flag, $main_image);
-    redirect('/admin/dashboard');
+
+    if(empty($_POST['id'])){
+        insert_item($pdo, $label, $description, $slug, $color, $size, $material_id, $side, $personality, $looking_for, $red_flag, $main_image);
+    }
+    else{
+        update_item($pdo, $_POST['id'], $label, $description, $slug, $color, $size, $material_id, $side, $personality, $looking_for, $red_flag, $main_image);
+    }
+    
+    redirect('/admin/item/edit/'.$slug);
 }
 
