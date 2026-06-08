@@ -17,7 +17,13 @@ function connection_check($pdo) {
         session_start();
         $_SESSION['operator_id']    = $operator['id'];
         $_SESSION['operator_email'] = $operator['email'];
-        redirect('/');
+
+        if($operator['is_admin'] === 1){
+            redirect('/admin');
+            exit;
+        }
+
+        redirect('/profile');
     } else {
         return render(__DIR__ . '/../views/connection.php', ['error' => 'Email ou mot de passe incorrect']);
     }
