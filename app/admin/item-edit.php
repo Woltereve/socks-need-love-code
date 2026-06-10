@@ -8,7 +8,7 @@
     <a href="/admin/dashboard" class="btn btn-ghost">← Retour à la liste</a>
   </div>
 
-  <div class="panel" style="max-width:680px;">
+  <div class="panel" class="panel panel-form">
     <form action="/admin/item/update" method="POST" enctype="multipart/form-data">
 
       <div class="form-group">
@@ -83,11 +83,11 @@
   
     <div class="form-group">
         <label class="form-label" for="photo">Photo</label>
-        <input class="form-input" type="file" id="photo" name="main_image" accept="image/*" style="padding:8px;" />
+       <input class="form-input input-file" type="file" id="photo" name="main_image" accept="image/*" />
 </div>
       
 
-      <div style="display:flex;gap:12px;margin-top:8px;">
+      <div class="btn-group">
         <button class="btn btn-primary" type="submit">Enregistrer la chaussette</button>
         <a href="/admin/item" class="btn btn-ghost">Annuler</a>
       </div>

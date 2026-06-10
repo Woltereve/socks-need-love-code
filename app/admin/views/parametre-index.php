@@ -1,27 +1,7 @@
-<?php include "../pdo.php"; ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin — Paramètres · Socks Need Love</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="admin.css" />
-</head>
-<body>
+<h1 class="page-title">Paramètres</h1>
+      <p class="page-sub" >Configuration générale de la plateforme</p>
 
-  <?php include 'topbar.php'; ?>
-
-  <div class="layout">
-
-    <?php $page = 'parametres'; include 'sidebar.php'; ?>
-
-    <main class="content">
-
-      <h1 class="page-title">Paramètres</h1>
-      <p class="page-sub" style="margin-bottom:32px;">Configuration générale de la plateforme</p>
-
-      <form action="admin-parametres-save.php" method="POST">
+      <form action="/admin/parametre/save" method="POST">
 
         
         <section class="panel">
@@ -88,8 +68,4 @@
           </div>
         </section>
       </form>
-    </main>
-  </div>
-
-</body>
-</html>
+    

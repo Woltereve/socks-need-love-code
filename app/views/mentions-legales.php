@@ -1,10 +1,4 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Mentions légales - Socks Need Love</title>
-    <link rel="stylesheet" href="mentions-legales.css">
-  </head>
+
   <body>
     <h1>Socks Need Love</h1>
     <p>
@@ -109,10 +103,11 @@
     </section>
 
     <p>
+       <p>&copy; <?php echo date ('Y') ; ?></p>
       <strong
         >❤️ Socks Need Love — Parce que chaque chaussette mérite une seconde
         chance.</strong
       >
     </p>
   </body>
-</html>
+

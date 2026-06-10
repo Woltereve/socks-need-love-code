@@ -27,6 +27,12 @@ function item_edit ($pdo,$slug){
     'themes' => $themes,
     'sizes' => $sizes   ]);
 }
+function item_gestion($pdo) {
+    $items = get_all_items($pdo);
+    return render(__DIR__ . '/../views/admin-gestion.php', [
+        'items' => $items
+    ]);
+}
   
 
 function item_save($pdo) {

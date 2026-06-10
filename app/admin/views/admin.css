@@ -394,7 +394,11 @@ tbody td {
   justify-content: center; 
   margin-top: 8px; 
 }
-
+.btn-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
 
 .filters {
   display: flex;
@@ -561,3 +565,7 @@ tbody td {
   max-width: 360px;
   line-height: 1.8;
 }
+.panel-form { max-width: 680px; }
+.input-file { padding: 8px; }
+.img-preview { width: 100px; margin-bottom: 8px; display: block; }
+.error-msg { color: red; }

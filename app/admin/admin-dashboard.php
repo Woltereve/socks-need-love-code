@@ -1,22 +1,4 @@
-<?php
-require "../pdo.php";
-?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin — Tableau de bord · Socks Need Love</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="admin.css" />
-</head>
-<body>
-<?php include 'topbar.php'; ?>
-  
-  
 
-  <div class="layout">
-    <?php include 'sidebar.php'; ?>
     
     
    
@@ -59,7 +41,7 @@ require "../pdo.php";
             </thead>
            
           </table>
-          <a href="admin-users.php" class="btn btn-ghost" style="margin-top:14px;">Voir tous les utilisateurs</a>
+          <a href="admin-users.php" class="btn btn-ghost"  class="panel panel-form">Voir tous les utilisateurs</a>
 </section>
        
 

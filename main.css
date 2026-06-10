@@ -406,7 +406,7 @@ h6 {
 .danger a {
   color: red;
 }
-
+.error-msg { color: red; }
 
 /* FOOTER*/
 footer {

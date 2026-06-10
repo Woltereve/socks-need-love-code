@@ -2,7 +2,7 @@
   <h1>Connexion</h1>
 
   <?php if (isset($error)) { ?>
-    <p style="color:red;"><?= $error ?></p>
+   <p class="error-msg"><?= $error ?></p>
   <?php } ?>
 
   <form action="/connection/check" method="POST">

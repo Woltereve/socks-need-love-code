@@ -19,7 +19,7 @@
       <li><a href="contact.php" class="nav-link">Contact</a></li> 
        </ul>
     
-    <div style="margin-left: auto; display: flex; gap: 10px;">
+    <div class="panel panel-form">
     <a href="connection.php" class="btn">Se connecter</a>
     <a href="inscription.php" class="btn">S'inscrire</a>
 </div>
