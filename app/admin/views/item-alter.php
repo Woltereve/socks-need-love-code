@@ -1,4 +1,8 @@
-<main class="content">
+<?php if (isset($_GET['success'])) { ?>
+ <div class="badge badge-actif save-success">
+    <span class="badge-dot"></span> Modifications enregistrées !
+  </div>
+<?php } ?>
 
   <div class="page-header">
     <div>

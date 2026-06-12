@@ -7,12 +7,11 @@
 </div>
         
 
-      
-      <main class="filters">
-        <div class="search-wrap">
-          <span class="search-icon">⌕</span>
-          <input class="search-input" type="text" name="recherche" placeholder="Rechercher une chaussette…" />
-</main>
+      <div class="filters">
+  <div class="search-wrap">
+    <span class="search-icon">⌕</span>
+    <input class="search-input" type="text" name="recherche" placeholder="Rechercher une chaussette…" />
+  </div>
         <select class="filter-select" name="categorie">
           <option value="">Toutes les catégories</option>
          
@@ -35,13 +34,43 @@
               <th>Nom / surnom</th>
               <th>Catégorie</th>
               <th>Taille</th>
-              <th>État</th>
+              <th>Coté</th>
               <th>Statut</th>
               <th>Ajoutée le</th>
               <th>Actions</th>
             </tr>
           </thead>
-      
+          <tbody>
+  <?php foreach ($items as $item){?>
+  <tr>
+    <td><img src="/<?= $item ['main_image'] ?>" class="thumb"/></td>
+    <td><?=$item['label'] ?></td>
+
+<td>
+  <?php foreach ($materials as $material) {
+    if ($material['id'] == $item['material_id']) {
+      echo $material['label'];
+      }
+      } ?>
+</td>
+
+<td>
+  <?php foreach ($sizes as $size) {
+    if ($size['id'] == $item['size']) {
+      echo $size['label'];
+      }
+      } ?>
+      <td><?= $item['side'] ?></td>
+</td>
+<td><?= $item['created_at'] ?></td>
+</tr>
+<?php } ?>
+
+
+
+</tbody>
+
+
         </table>
       </div>
 

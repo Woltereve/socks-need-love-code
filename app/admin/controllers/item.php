@@ -29,8 +29,12 @@ function item_edit ($pdo,$slug){
 }
 function item_gestion($pdo) {
     $items = get_all_items($pdo);
+    $materials = get_all_materials ($pdo);
+    $sizes = get_all_sizes ($pdo);
     return render(__DIR__ . '/../views/admin-gestion.php', [
-        'items' => $items
+        'items' => $items,
+        'materials' => $materials,
+        'sizes' => $sizes
     ]);
 }
   
@@ -64,6 +68,6 @@ function item_save($pdo) {
         update_item($pdo, $_POST['id'], $label, $description, $slug, $color, $size, $material_id, $side, $personality, $looking_for, $red_flag, $main_image);
     }
     
-    redirect('/admin/item/edit/'.$slug);
+    redirect('/admin/item/edit/'.$slug.'?success=1');
 }
 
