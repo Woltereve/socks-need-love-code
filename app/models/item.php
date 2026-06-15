@@ -1,8 +1,8 @@
 <?php
-function insert_item($pdo, $label, $description, $slug, $color, $size, $material_id, $side, $personality, $looking_for, $red_flag, $main_image) {
+function insert_item($pdo, $label, $description, $slug, $color, $size, $material_id,$state_id, $side, $personality, $looking_for, $red_flag, $main_image) {
     $stmt = $pdo->prepare('
-        INSERT INTO item (label, description, slug, color, size, material_id, side, personality, looking_for, red_flag, main_image, statut, created_at, updated_at)
-        VALUES (:label, :description, :slug, :color, :size, :material_id, :side, :personality, :looking_for, :red_flag, :main_image, 1, NOW(), NOW())
+        INSERT INTO item (label, description, slug, color, size, material_id,state_id, side, personality, looking_for, red_flag, main_image, statut, created_at, updated_at)
+        VALUES (:label, :description, :slug, :color, :size, :material_id,:state_id, :side, :personality, :looking_for, :red_flag, :main_image, 1, NOW(), NOW())
     ');
     $stmt->execute([
         ':label'       => $label,
@@ -11,6 +11,7 @@ function insert_item($pdo, $label, $description, $slug, $color, $size, $material
         ':color'       => $color,
         ':size'        => $size,
         ':material_id' => $material_id,
+        ':state_id'    => $state_id,
         ':side'        => $side,
         ':personality' => $personality,
         ':looking_for' => $looking_for,
@@ -20,6 +21,10 @@ function insert_item($pdo, $label, $description, $slug, $color, $size, $material
 }
 function get_all_sizes($pdo) {
     $stmt = $pdo->query('SELECT * FROM size');
+    return $stmt->fetchAll();
+}
+function get_all_states($pdo) {
+    $stmt = $pdo->query('SELECT * FROM state');
     return $stmt->fetchAll();
 }
 function slugify($text) {

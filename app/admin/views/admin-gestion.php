@@ -63,6 +63,11 @@
       <td><?= $item['side'] ?></td>
 </td>
 <td><?= $item['created_at'] ?></td>
+<td>
+  <div class="actions">
+    <a href="/admin/item/edit/<?= $item['slug'] ?>" class="btn-sm">Modifier</a>
+  </div>
+</td>
 </tr>
 <?php } ?>
 

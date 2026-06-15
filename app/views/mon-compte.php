@@ -1,4 +1,4 @@
-<?php include 'top.php'; ?>
+
 
  <header>
     <h1 class="compte-title">Mon compte</h1>
@@ -10,7 +10,7 @@
       
       <div class="compte-card">
         <h3>🧦 Mes chaussettes</h3>
-        <a href="mes_chaussettes.php" class="lien_couleur">Voir mes chaussettes</a>
+        <a href="/mes-chaussettes">Ajouter une chaussette</a>
       </div>
       
       <div class="compte-card">
@@ -44,7 +44,7 @@
     </div>
   </main>
   
-  <?php include 'bottom.php'; ?>
+  
   
       
       

@@ -4,6 +4,7 @@ require __DIR__ . '/../models/item.php';
 function item_add($pdo) {
     $categories = get_all_materials($pdo);
     $themes     = get_all_themes($pdo);
+    $states = get_all_states($pdo);
     return render(__DIR__ . '/../views/item-add.php', [
         'categories' => $categories,
         'themes'     => $themes
@@ -19,6 +20,7 @@ function item_create($pdo) {
     $personality = $_POST['personality'];
     $looking_for = $_POST['looking_for'];
     $red_flag    = $_POST['red_flag'];
+
     $slug        = slugify($label);
         
     $main_image = '';

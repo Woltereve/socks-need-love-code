@@ -5,11 +5,13 @@ function item_new($pdo) {
     $materials = get_all_materials($pdo);
     $themes = get_all_themes($pdo);
     $sizes = get_all_sizes($pdo);
+    $states = get_all_states ($pdo);
 
     return render (__DIR__ . '/../views/item-alter.php',[
     'materials' => $materials ,
     'themes' => $themes,
-    'sizes' => $sizes
+    'sizes' => $sizes,
+    'states'=> $states,
     ]);
 
 }
@@ -20,12 +22,14 @@ function item_edit ($pdo,$slug){
     $item = get_one_item($pdo,$slug);
     $themes = get_all_themes($pdo);
     $sizes = get_all_sizes($pdo);
+     $states = get_all_states ($pdo);
     
     return render ( __DIR__. '/../views/item-alter.php',[
     'item' =>$item,
     'materials' => $materials,
     'themes' => $themes,
-    'sizes' => $sizes   ]);
+    'sizes' => $sizes ,
+     'states'=> $states,  ]);
 }
 function item_gestion($pdo) {
     $items = get_all_items($pdo);
@@ -35,6 +39,7 @@ function item_gestion($pdo) {
         'items' => $items,
         'materials' => $materials,
         'sizes' => $sizes
+        
     ]);
 }
   
@@ -49,6 +54,7 @@ function item_save($pdo) {
     $personality = $_POST['personality'];
     $looking_for = $_POST['looking_for'];
     $red_flag    = $_POST['red_flag'];
+    $state_id    = $_POST['state_id'];
     $slug        = slugify($label);
         
     $main_image = '';
@@ -62,10 +68,10 @@ function item_save($pdo) {
     }
 
     if(empty($_POST['id'])){
-        insert_item($pdo, $label, $description, $slug, $color, $size, $material_id, $side, $personality, $looking_for, $red_flag, $main_image);
+        insert_item($pdo, $label, $description, $slug, $color, $size, $material_id,$state_id, $side, $personality, $looking_for, $red_flag, $main_image);
     }
     else{
-        update_item($pdo, $_POST['id'], $label, $description, $slug, $color, $size, $material_id, $side, $personality, $looking_for, $red_flag, $main_image);
+        update_item($pdo, $_POST['id'], $label, $description, $slug, $color, $size, $material_id,$state_id, $side, $personality, $looking_for, $red_flag, $main_image);
     }
     
     redirect('/admin/item/edit/'.$slug.'?success=1');

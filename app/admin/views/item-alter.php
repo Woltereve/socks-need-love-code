@@ -1,4 +1,5 @@
 <?php if (isset($_GET['success'])) { ?>
+<?php $item = $item ?? []; ?>
  <div class="badge badge-actif save-success">
     <span class="badge-dot"></span> Modifications enregistrées !
   </div>
@@ -27,9 +28,12 @@
           <label class="form-label" for="taille">Taille</label>
           <select class="form-select" id="taille" name="size">
 
-            <?php foreach ($sizes as $size) { ?>
-            <option value="<?= $size['id'] ?>"><?= $size['label'] ?></option>
-          <?php } ?>
+           
+  <?php foreach ($sizes as $size) { ?>
+    <option value="<?= $size['id'] ?>" <?= $size['id'] == $item['size'] ? 'selected' : '' ?>>
+      <?= $size['label'] ?>
+    </option>
+  <?php } ?>
           </select>
         </div>
         <div class="form-group">
@@ -41,24 +45,26 @@
 
       <div class="form-group">
         <label class="form-label" for="matiere">Matière</label>
-        <select class="form-select" id="matiere" name="material_id">
-          <option value="">— Choisir —</option>
-          <?php foreach ($materials as $material) { ?>
-            <option value="<?= $material['id'] ?>"><?= $material['label'] ?? '' ?></option>
-          <?php } ?>
-        </select>
-      </div>
+      <select class="form-select" id="matiere" name="material_id">
+  <option value="">— Choisir —</option>
+  <?php foreach ($materials as $material) { ?>
+    <option value="<?= $material['id'] ?>" <?= $material['id'] == $item['material_id'] ? 'selected' : '' ?>>
+      <?= $material['label'] ?>
+    </option>
+  <?php } ?>
+</select>
 
       <div class="form-group">
         <label class="form-label" for="etat">État</label>
-        <select class="form-select" id="etat" name="etat">
-          <option value="">— Choisir —</option>
-          <option value="neuf">Neuf</option>
-          <option value="bon_etat">Bon état</option>
-          <option value="use">Usé avec charme</option>
-        </select>
-      </div>
-
+       <select class="form-select" id="etat" name="state_id">
+  <option value="">— Choisir —</option>
+  <?php foreach ($states as $state) { ?>
+    <option value="<?= $state['id'] ?>" <?= isset($item['state_id']) && $state['id'] == $item['state_id'] ? 'selected' : '' ?>>
+      <?= $state['label'] ?>
+    </option>
+  <?php } ?>
+</select>
+</div>
       <div class="form-group">
         <label class="form-label" for="description">Description / anecdote</label>
         <textarea class="form-textarea" id="description" name="description" placeholder="Son histoire, sa personnalité, ce qu'elle recherche…"><?= $item['description'] ?></textarea>
@@ -66,10 +72,12 @@
 <div class="form-group">
     <label class="form-label" for="side">Côté</label>
     <select class="form-input" id="side" name="side">
-      <option value="droit">Droit</option>
-      <option value="gauche">Gauche</option>
-      <option value="inconnu">Inconnu</option>
-    </select>
+  <option value="droit" <?= $item['side'] == 'droit' ? 'selected' : '' ?>>Droit</option>
+  <option value="gauche" <?= $item['side'] == 'gauche' ? 'selected' : '' ?>>Gauche</option>
+  <option value="paire" <?= $item['side'] == 'paire' ? 'selected' : '' ?>>La paire</option>
+  <option value="inconnu" <?= $item['side'] == 'inconnu' ? 'selected' : '' ?>>Inconnu</option>
+</select>
+    
     </div>
 
 <div class="form-group">
