@@ -1,12 +1,17 @@
-
-<form action="/catalogue" method="GET" class="filters">
+<div class="sock-grid">
+  
+    <form action="/catalogue" method="GET" class="sock-card filters" >
   <div class="search-wrap">
     <span class="search-icon">⌕</span>
     <input class="search-input" type="text" name="q" placeholder="Rechercher une chaussette…" value="<?= $q ?? '' ?>" />
   </div>
 
+    
+    <div class="filters-inner">
+
   <select class="filter-select" name="material_id">
     <option value="">Toutes les matières</option>
+    
     <?php foreach ($materials as $material) { ?>
       <option value="<?= $material['id'] ?>" <?= ($material_id ?? '') == $material['id'] ? 'selected' : '' ?>>
         <?= $material['label'] ?>
@@ -41,10 +46,13 @@
     <?php } ?>
   </select>
 
+
+</div>
+
   <button class="btn btn-ghost" type="submit">Filtrer</button>
+
 </form>
 
-<div class="sock-grid">
   <?php foreach ($items as $item) { ?>
 
 

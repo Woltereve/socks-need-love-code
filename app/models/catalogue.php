@@ -23,9 +23,9 @@ function search_items($pdo, $q, $material_id, $size, $color, $state_id) {
     $params = [];
 
     if (!empty($q)) {
-        $sql .= " AND (label LIKE :q OR slug LIKE :q)";
-        $params[':q'] = '%' . $q . '%';
-    }
+       $sql .= " AND (label LIKE :q1 OR slug LIKE :q2)";
+        $params[':q1'] = '%' . $q . '%';
+        $params[':q2'] = '%' . $q . '%';}
     if (!empty($material_id)) {
         $sql .= " AND material_id = :material_id";
         $params[':material_id'] = $material_id;

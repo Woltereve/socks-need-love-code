@@ -39,6 +39,7 @@
         <p class="sock-bio">❌ Red flags<br><?= $item['red_flag'] ?></p>
 
         <a href="/catalogue" class="nav-link">← Vers catalogue</a>
+       <button class="match-btn" type="submit">❤️ Match</button>
         
     </div>
 
