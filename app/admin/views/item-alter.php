@@ -30,7 +30,7 @@
 
            
   <?php foreach ($sizes as $size) { ?>
-    <option value="<?= $size['id'] ?>" <?= $size['id'] == $item['size'] ? 'selected' : '' ?>>
+    <option value="<?= $size['id'] ?>" <?= $size['id'] == ($item['size'] ?? null ) ? 'selected' : '' ?>>
       <?= $size['label'] ?>
     </option>
   <?php } ?>
@@ -48,7 +48,8 @@
       <select class="form-select" id="matiere" name="material_id">
   <option value="">— Choisir —</option>
   <?php foreach ($materials as $material) { ?>
-    <option value="<?= $material['id'] ?>" <?= $material['id'] == $item['material_id'] ? 'selected' : '' ?>>
+    <option value="<?= $material['id'] ?>" 
+    <?= $material['id'] == ($item['material_id'] ?? null) ?'selected' : '' ?>>
       <?= $material['label'] ?>
     </option>
   <?php } ?>
@@ -67,34 +68,34 @@
 </div>
       <div class="form-group">
         <label class="form-label" for="description">Description / anecdote</label>
-        <textarea class="form-textarea" id="description" name="description" placeholder="Son histoire, sa personnalité, ce qu'elle recherche…"><?= $item['description'] ?></textarea>
+        <textarea class="form-textarea" id="description" name="description" placeholder="Son histoire, sa personnalité, ce qu'elle recherche…"><?= $item['description'] ?? '' ?></textarea>
       </div>
 <div class="form-group">
     <label class="form-label" for="side">Côté</label>
     <select class="form-input" id="side" name="side">
-  <option value="droit" <?= $item['side'] == 'droit' ? 'selected' : '' ?>>Droit</option>
-  <option value="gauche" <?= $item['side'] == 'gauche' ? 'selected' : '' ?>>Gauche</option>
-  <option value="paire" <?= $item['side'] == 'paire' ? 'selected' : '' ?>>La paire</option>
-  <option value="inconnu" <?= $item['side'] == 'inconnu' ? 'selected' : '' ?>>Inconnu</option>
+  <option value="droit" <?= ($item['side'] ?? null) == 'droit' ? 'selected' : '' ?>>Droit</option>
+  <option value="gauche" <?= ($item['side'] ?? null)== 'gauche' ? 'selected' : '' ?>>Gauche</option>
+  <option value="paire" <?= ($item['side'] ?? null) == 'paire' ? 'selected' : '' ?>>La paire</option>
+  <option value="inconnu" <?= ($item['side'] ?? null) == 'inconnu' ? 'selected' : '' ?>>Inconnu</option>
 </select>
     
     </div>
 
 <div class="form-group">
     <label class="form-label" for="personality">Personnalité</label>
-    <textarea class="form-textarea" id="personality" name="personality" placeholder="douce, folle, perchée…"><?= $item['personality'] ?></textarea>
+    <textarea class="form-textarea" id="personality" name="personality" placeholder="douce, folle, perchée…"><?= $item['personality'] ?? '' ?></textarea>
   </div>
 
     <div class="form-group">
       <label class="form-label" for="looking_for">Ce qu'elle recherche</label>
-    <textarea class="form-textarea" id="looking_for" name="looking_for" placeholder="l'amour, un double, un tirroir confortable..."><?= $item['looking_for'] ?></textarea>
+    <textarea class="form-textarea" id="looking_for" name="looking_for" placeholder="l'amour, un double, un tirroir confortable..."><?= $item['looking_for'] ?? '' ?></textarea>
 </div>
 <div class="form-group">
    <label class="form-label" for="red_flag">Red flags</label>
-    <textarea class="form-textarea" id="red_flag" name="red_flag" placeholder="claquettes/chaussettes…"><?= $item['red_flag'] ?></textarea>
+    <textarea class="form-textarea" id="red_flag" name="red_flag" placeholder="claquettes/chaussettes…"><?= $item['red_flag'] ?? '' ?></textarea>
 </div>
 
-  <?php if ($item['main_image']) { ?>
+  <?php if (!empty($item['main_image'])) { ?>
   <img src="/<?= $item['main_image'] ?>" class="img-preview" />
 <?php } ?>
     <div class="form-group">

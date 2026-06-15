@@ -13,10 +13,24 @@
         
         <div class="sock-tags">
     <a href="/catalogue?color=<?= $item['color'] ?>" class="tag"><?= $item['color'] ?></a>
-    <a href="/catalogue?size=<?= $item['size'] ?>" class="tag"><?= $item['size'] ?></a>
-    <a href="/catalogue?material=<?= $item['material'] ?>" class="tag"><?= $item['material'] ?></a>
+
+    
+   <?php foreach ($sizes as $size) {
+  if ($size['id'] == $item['size']) { ?>
+    <a href="/catalogue?size=<?= $size['id'] ?>" class="tag"><?= $size['label'] ?></a>
+<?php }
+} ?>
+
+    <?php foreach ($materials as $material) {
+  if ($material['id'] == $item['material_id']) { ?>
+    <a href="/catalogue?material_id=<?= $material['id'] ?>" class="tag"><?= $material['label'] ?></a>
+<?php }
+} ?>
+
+    
     <a href="/catalogue?side=<?= $item['side'] ?>" class="tag"><?= $item['side'] ?></a>
 </div>
+        <p class="sock-bio">📖 Son histoire<br><?= $item['???'] ?></p>
 
         <p class="profil">💕 Ce qu'elle recherche<br><?= $item['looking_for'] ?></p>
 
@@ -25,6 +39,7 @@
         <p class="sock-bio">❌ Red flags<br><?= $item['red_flag'] ?></p>
 
         <a href="/catalogue" class="nav-link">← Vers catalogue</a>
+        
     </div>
 
 </article>
