@@ -5,7 +5,7 @@
 
     <div class="compte-card">
       <h3>🧦 Mes chaussettes</h3>
-      <a href="/mes-chaussettes" class="lien_couleur">Voir mes chaussettes</a>
+    <a href="/espace" class="lien_couleur">Voir mes chaussettes</a>
     </div>
 
     <div class="compte-card">

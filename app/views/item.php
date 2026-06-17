@@ -30,7 +30,7 @@
     
     <a href="/catalogue?side=<?= $item['side'] ?>" class="tag"><?= $item['side'] ?></a>
 </div>
-        <p class="sock-bio">📖 Son histoire<br><?= $item['???'] ?></p>
+        <p class="sock-bio">📖 Son histoire<br><?= $item['content'] ?></p>
 
         <p class="profil">💕 Ce qu'elle recherche<br><?= $item['looking_for'] ?></p>
 
@@ -39,7 +39,10 @@
         <p class="sock-bio">❌ Red flags<br><?= $item['red_flag'] ?></p>
 
         <a href="/catalogue" class="nav-link">← Vers catalogue</a>
-       <button class="match-btn" type="submit">❤️ Match</button>
+       <form action="/collection/match" method="POST">
+    <input type="hidden" name="item_id" value="<?= $item['id'] ?>">
+   <button class="match-btn" type="submit"><?= $is_matched ? '🧦 Adjami' :'🧦 Padjami' ?></button>
+</form>
         
     </div>
 

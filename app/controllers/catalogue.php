@@ -1,13 +1,26 @@
 <?php
 require __DIR__.'/../models/catalogue.php';
 require __DIR__ . '/../models/item.php';
+require __DIR__ . '/../models/collection.php';
 function catalogue_show($pdo, $slug) {
     $data = [];
     $data['item'] = get_one_item($pdo, $slug);
     $data['materials'] = get_all_materials($pdo);
     $data['sizes'] = get_all_sizes($pdo);
+    
 
-    return render(__DIR__ . '/../views/item.php', $data);
+    $creator_id = $_SESSION['operator_id'] ?? null;
+
+   if (!empty($creator_id)) {
+    $collection = get_collection($pdo,$creator_id);
+    }
+    $is_matched = false;
+    
+    if (!empty($collection)) {
+        $is_matched = !empty(is_in_collection($pdo, $collection['id'], $data['item']['id']));
+        }
+        $data['is_matched'] = $is_matched;
+        return render(__DIR__ . '/../views/item.php', $data);
 }
 
 function catalogue_index($pdo) {
