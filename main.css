@@ -186,8 +186,10 @@ h6 {
   width: 100%;
   box-sizing: border-box;
 }
-.sock-grid form {
-  overflow: hidden;
+.sock-detail form {
+  border: none;
+  max-width: none;
+  margin: 0;
 }
 .filters-inner {
   display: flex;
@@ -296,6 +298,9 @@ h6 {
 .sock-detail .sock-info h2 {
   font-size: 1.8rem;
   color: var(--color-rose-deep);
+  .sock-detail .sock-card {
+  border: none;
+}
 }
 .origine {
   font-family: var(--font-titre);
@@ -546,5 +551,42 @@ footer h6 {
   color: var(--color-rose-pale);
   outline: none;
   cursor: pointer;
+}
+.conversation {
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.conversation p {
+  background: var(--color-surface);
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  color: var(--color-text);
+  max-width: 70%;
+  margin: 0 auto;
+  
+  
+}
+.conversation + form {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: none;
+}
+
+.conversation + form textarea {
+  background: var(--color-surface);
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius);
+  padding: 12px;
+  margin: 20px;
+  color: var(--color-text);
+  min-height: 80px;
 }
 

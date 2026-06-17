@@ -41,7 +41,7 @@
         <a href="/catalogue" class="nav-link">← Vers catalogue</a>
        <form action="/collection/match" method="POST">
     <input type="hidden" name="item_id" value="<?= $item['id'] ?>">
-   <button class="match-btn" type="submit"><?= $is_matched ? '🧦 Adjami' : '❤️ Padjami' ?></button>
+   <button class="match-btn" type="submit" title="<?= $is_matched ? 'Déjà dans tes favoris' : 'Collectionner cette chaussette' ?>"><?= $is_matched ? '🧺 A-dja-mi' : '❤️ Pa-dja-mi' ?></button>
 </form>
         
     </div>
