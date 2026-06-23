@@ -42,7 +42,9 @@
        <form action="/collection/match" method="POST">
     <input type="hidden" name="item_id" value="<?= $item['id'] ?>">
    <button class="match-btn" type="submit" title="<?= $is_matched ? 'Déjà dans tes favoris' : 'Collectionner cette chaussette' ?>"><?= $is_matched ? '🧺 A-dja-mi' : '❤️ Pa-dja-mi' ?></button>
+   
 </form>
+<a href="/espace" class="match-btn">❤️Matcher</a>
         
     </div>
 

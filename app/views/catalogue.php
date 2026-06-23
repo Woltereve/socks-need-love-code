@@ -1,4 +1,6 @@
-<div class="sock-grid">
+<?php if (isset($_GET['success'])) { ?>
+  <p class="save-success">🧦 Chaussette ajoutée!</p>
+<?php } ?><div class="sock-grid">
   
     <form action="/catalogue" method="GET" class="sock-card filters" >
   <div class="search-wrap">

@@ -3,12 +3,15 @@
 require __DIR__ . '/../models/item.php';
 
 function item_add($pdo) {
-    $categories = get_all_materials($pdo);
+    $materials  = get_all_materials($pdo);
     $themes     = get_all_themes($pdo);
-    $states = get_all_states($pdo);
+    $states     = get_all_states($pdo);
+    $sizes      = get_all_sizes($pdo);
     return render(__DIR__ . '/../views/item-add.php', [
-        'categories' => $categories,
-        'themes'     => $themes
+        'materials' => $materials,
+        'themes'    => $themes,
+        'states'    => $states,
+        'sizes'     => $sizes,
     ]);
 }
 function item_create($pdo) {
@@ -21,7 +24,7 @@ function item_create($pdo) {
     $personality = $_POST['personality'];
     $looking_for = $_POST['looking_for'];
     $red_flag    = $_POST['red_flag'];
-
+    $state_id    = $_POST['state_id'];
     $slug        = slugify($label);
         
     $main_image = '';
@@ -34,6 +37,6 @@ function item_create($pdo) {
         $main_image = 'asset/images-SM/' . $filename;
     }
 
-    insert_item($pdo, $label, $description, $slug, $color, $size, $material, $side, $personality, $looking_for, $red_flag, $category_id, $main_image);
-    redirect('/catalogue');
+    insert_item($pdo, $label, $description, $slug, $color, $size, $material_id,$state_id, $side, $personality, $looking_for, $red_flag, $main_image);
+    redirect('/catalogue?success=1');
 }

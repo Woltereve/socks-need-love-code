@@ -1,7 +1,7 @@
 <div class="form-container">
   <h1>Inscription </h1>
 
-  <form action="login-check.php" method="POST">
+  <form action="/inscription/save" method="POST">
   <label class="form-label" for="pseudo">pseudo</label>
     <input class="form-input" type="text" id="pseudo" name="pseudo" placeholder="Choisissez un pseudo" required />
 
