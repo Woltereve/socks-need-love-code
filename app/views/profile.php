@@ -4,13 +4,23 @@
   <div class="compte-grid">
 
     <div class="compte-card">
-      <h3>🧦 Mes chaussettes</h3>
+      <h3>🚪 Ma collection</h3>
     <a href="/espace" class="lien_couleur">Voir mes chaussettes</a>
-    </div>
+  </div>
+  
+  <div class="compte-card ">
+    <h3>🧦 Mes chaussettes</h3>
+    <a href="/espace" class="lien_couleur"> Mes chaussettes</a>
 
+  </div>
     <div class="compte-card">
       <h3>🔄 Échanges réalisés</h3>
       <a href="#" class="lien_couleur">Mes chaussettes échangées</a>
+    </div>
+
+    <div class="compte-card">
+      <h3>➕ Ajouter</h3>
+      <a href="/item/add" class="lien_couleur">Ajouter une chaussette</a>
     </div>
 
     <div class="compte-card">
@@ -23,15 +33,7 @@
       <a href="/profil" class="lien_couleur">Mon profil / Modifier</a>
     </div>
 
-    <div class="compte-card">
-      <h3>➕ Ajouter</h3>
-      <a href="/item/add" class="lien_couleur">Ajouter une chaussette</a>
-    </div>
 
-    <div class="compte-card danger">
-      <h3>🚪 Déconnexion</h3>
-      <a href="/connection/logout" class="lien_couleur">Se déconnecter</a>
-    </div>
 
   </div>
 </div>

@@ -44,3 +44,7 @@ function get_all_themes($pdo) {
     $stmt = $pdo->query('SELECT * FROM theme');
     return $stmt->fetchAll();
 }
+function delete_item($pdo, $id) {
+    $stmt = $pdo->prepare('UPDATE item SET statut = 0 WHERE id = :id');
+    $stmt->execute([':id' => $id]);
+}

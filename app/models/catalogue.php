@@ -3,7 +3,7 @@
 
 function get_all_items ($pdo){
 
- $sql = ' SELECT * FROM item';
+ $sql = ' SELECT * FROM item WHERE statut=1';
  $stmt = $pdo->query($sql);
  return $stmt->fetchAll();
 }

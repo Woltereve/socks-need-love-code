@@ -34,7 +34,9 @@ body {
   border-radius: 25px;
   text-decoration: none;
   text-transform: uppercase;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid white;
 }
 
@@ -86,6 +88,7 @@ body {
   background-color: rgba(255, 255, 255, 0.08);
   font-size: 0.9rem;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -304,6 +307,17 @@ h6 {
 .sock-detail .sock-card {
   border: none;
 }
+.detail {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
 
 .origine {
   font-family: var(--font-titre);
@@ -362,17 +376,6 @@ h6 {
   background: var(--color-hover);
 }
 
-.detail {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-family: sans-serif;
-  font-size: 14px;
-  transition: background-color 0.3s;
-}
 
 .button {
   color: var(--color-rose-dusty);

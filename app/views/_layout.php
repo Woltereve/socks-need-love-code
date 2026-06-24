@@ -23,7 +23,7 @@
    <div class="nav-buttons">
 <?php if (isset($_SESSION['operator_id'])) { ?>
     <span class="panel panel-form">Bonjour <?= $_SESSION['operator_email'] ?></span>
-    <a href="/connection/logout" class="btn">Se déconnecter</a>
+    <a href="/connection/logout" class="btn">Déconnection</a>
 <?php } else { ?>
     <a href="/connection" class="btn">Se connecter</a>
     <a href="/inscription" class="btn">S'inscrire</a>

@@ -39,6 +39,7 @@
         <p class="sock-bio">❌ Red flags<br><?= $item['red_flag'] ?></p>
 
         <a href="/catalogue" class="nav-link">← Vers catalogue</a>
+        <a href="/message/conversation?item_id=<?= $item['id'] ?>&with=2" class="nav-link">→ Contacter </a>
        <form action="/collection/match" method="POST">
     <input type="hidden" name="item_id" value="<?= $item['id'] ?>">
    <button class="match-btn" type="submit" title="<?= $is_matched ? 'Déjà dans tes favoris' : 'Collectionner cette chaussette' ?>"><?= $is_matched ? '🧺 A-dja-mi' : '❤️ Pa-dja-mi' ?></button>

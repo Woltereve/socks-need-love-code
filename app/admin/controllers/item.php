@@ -76,4 +76,9 @@ function item_save($pdo) {
     
     redirect('/admin/item/edit/'.$slug.'?success=1');
 }
+function item_delete($pdo, $id) {
+    delete_item($pdo, $id);
+    redirect('/admin/item/gestion');
+}
+
 

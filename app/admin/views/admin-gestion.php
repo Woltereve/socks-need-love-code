@@ -35,7 +35,6 @@
               <th>Catégorie</th>
               <th>Taille</th>
               <th>Coté</th>
-              <th>Statut</th>
               <th>Ajoutée le</th>
               <th>Actions</th>
             </tr>
@@ -63,11 +62,13 @@
       <td><?= $item['side'] ?></td>
 </td>
 <td><?= $item['created_at'] ?></td>
-<td>
-  <div class="actions">
-    <a href="/admin/item/edit/<?= $item['slug'] ?>" class="btn-sm">Modifier</a>
-  </div>
-</td>
+
+ 
+    
+  
+  <td><a href="/admin/item/edit/<?= $item['slug'] ?>" class="btn-sm">Modifier</a></td>
+<td><a href="/admin/item/delete/<?= $item['id'] ?>" class="btn-sm btn-danger" onclick="return confirm('Supprimer cette chaussette ?')">Supprimer</a></td>
+
 </tr>
 <?php } ?>
 

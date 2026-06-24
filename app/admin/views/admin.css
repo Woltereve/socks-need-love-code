@@ -389,6 +389,7 @@ tbody td {
   background: rgba(220,60,60,0.15); 
   color: var(--danger); 
   border: 0.5px solid rgba(220,60,60,0.35);
+  
 
 }
 .btn-danger:hover { 
@@ -514,9 +515,12 @@ tbody td {
 
 
 .actions {
-   display: flex;
-    gap: 6px; 
-  }
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  margin: 15px;
+  justify-content: space-between;
+}
 
 .btn-sm {
   padding: 5px 11px;
