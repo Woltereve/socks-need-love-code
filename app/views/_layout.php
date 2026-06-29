@@ -10,49 +10,48 @@
 </head>
 <body>
   <header>
-  <nav class="navbar">
+<nav class="navbar">
     <div class="nav-container">
-    <img src="/asset/images-SM/logo.svg" alt="logo" class="logo" />
-    <ul class="nav-menu">
-      <li><a href="/" class="nav-link">Accueil</a></li>
-      <li><a href="/catalogue" class="nav-link">Catalogue</a></li>
-      <li><a href="/profile" class="nav-link">Mon Compte</a></li>
-      <li><a href="/contact" class="nav-link">Contact</a></li> 
-       </ul>
-    
-   <div class="nav-buttons">
-<?php if (isset($_SESSION['operator_id'])) { ?>
-    <span class="hide-mobile">Bonjour <?= $_SESSION['operator_email'] ?></span>
-    <a href="/connection/logout" class="btn">Déconnection</a>
-<?php } else { ?>
-    <a href="/connection" class="btn">Se connecter</a>
-    <a href="/inscription" class="btn">S'inscrire</a>
-<?php } ?>
-</div>
-
-
-
-
+      <img src="/asset/images-SM/logo.svg" alt="logo" class="logo" />
+      <button class="burger" id="burger">&#9776;</button>
+      <ul class="nav-menu">
+        <li><a href="/" class="nav-link">Accueil</a></li>
+        <li><a href="/catalogue" class="nav-link">Catalogue</a></li>
+        <li><a href="/profile" class="nav-link">Mon Compte</a></li>
+        <li><a href="/contact" class="nav-link">Contact</a></li>
+        <?php if (isset($_SESSION['operator_id'])) { ?>
+          <li><a href="/connection/logout" class="nav-link">Déconnexion</a></li>
+        <?php } else { ?>
+          <li><a href="/connection" class="nav-link">Se connecter</a></li>
+          <li><a href="/inscription" class="nav-link">S'inscrire</a></li>
+        <?php } ?>
+      </ul>
     </div>
 </nav>
+   
 </header>
 <main>
-<?php echo $page_content;?>
-
-
-
+  <?php echo $page_content;?>
+   
 </main>
- <footer>
-         <ul class=footer-ul>
-                 <li><a href="/desinscription" class= "footer_li">Désinscription</a></li>
-                 <li> <a href="/deconnection" class= "footer_li">Déconnection</a></li>
-                 <li><a href="/contact" class= "footer_li">Contact</a></li>
-                 
-                </ul>
-                <p>&copy; <?php echo date ('Y') ; ?></p>
-                <a href="mentions-legales.html">Mentions légales</a>
-          <p>”Un projet imaginé par Eve ” </p>
-          <strong>”Parce que personne ne devrait finir seul au fond d'un tambour de machine à laver.” 🧦</strong>
-        </footer>
+<footer>
+  <ul class=footer-ul>
+    <li><a href="/desinscription" class="footer_li">Désinscription</a></li>
+    <li><a href="/deconnection" class="footer_li">Déconnection</a></li>
+    <li><a href="/contact" class="footer_li">Contact</a></li>
+  </ul>
+  <p>&copy; <?php echo date ('Y') ; ?></p>
+  <a href="mentions-legales.html">Mentions légales</a>
+  <p>"Un projet imaginé par Eve "</p>
+  <strong>"Parce que personne ne devrait finir seul au fond d'un tambour de machine à laver." 🧦</strong>
+</footer>
+        <script>
+          const burger = document.getElementById('burger');
+          const menu = document.querySelector('.nav-menu');
+        
+          burger.addEventListener('click', function() {
+            menu.classList.toggle('open');
+          });
+        </script>
         </body>
 </html>

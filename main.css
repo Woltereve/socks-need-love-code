@@ -1,7 +1,7 @@
 /* BASE*/
 body {
-  background-color: var(--color-surface);
-  font-family: var(--font-corps);
+  background-color: rgba(26, 26, 26, 0.97);
+  font-family: var(--font-titre);
   font-weight: var(--fw-regular);
   color: var(--color-text);
   margin: 0;
@@ -44,6 +44,9 @@ body {
   background-color: var(--color-gold);
   color: var(--color-text);
 }
+.nav-menu .nav-link:hover {
+  color: white;
+}
 
 .nav-container {
   width: 100%;
@@ -85,7 +88,7 @@ body {
   text-decoration: none;
   padding: 6px 12px;
   border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.08);
+  
   font-size: 0.9rem;
   transition: 0.3s;
   white-space: nowrap;
@@ -93,9 +96,8 @@ body {
 
 .nav-link:hover {
   background-color: var(--color-rose-deep);
-  color: var(--color-text);
+  color: white;
 }
-
 .nav-link.active {
   background-color: var(--color-rose-deep);
   color: var(--color-text);
@@ -168,7 +170,6 @@ h6 {
   max-width: 350px;
   height: 100%;
   object-fit: contain;
-  border: solid 5px var(--color-gold);
   border-radius: var(--radius);
   margin: 0 auto;
 }
@@ -280,7 +281,7 @@ h6 {
 }
 
 .sock-bio {
-  font-family: var(--font-corps);
+  font-family: var(--font-titre);
   font-size: var(--fs-small);
   font-weight: var(--fw-light);
   line-height: var(--lh-corps);
@@ -601,15 +602,27 @@ footer h6 {
   min-height: 80px;
 }
 
+.burger {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
-  .nav-menu {
-    display: none;
-  }
-  
+ 
+  .nav-buttons .btn {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+}
   .nav-container {
     padding: 0 12px;
     gap: 8px;
   }
+  .navbar {
+  position: fixed;
+  width: 100%;
+  top: 0 ;
+  left: 0;
+  right: 0;
+}
   .logo {
   width: 100px;
   height: 100px;
@@ -652,4 +665,55 @@ footer h6 {
   width: 100%;
   box-sizing: border-box;
 }
+.burger {
+  display: block;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
+
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 26, 26, 0.97);
+  z-index: 999;
+  gap: 8px;
+}
+
+.nav-menu.open {
+  display: flex;
+}
+
+.nav-menu .nav-link {
+  background: none;
+  border: none;
+  color: var(--color-rose-pale);
+  font-family: var(--font-titre);
+  font-size: 2rem;
+  font-style: italic;
+  padding: 12px 0;
+  text-shadow: none;
+  letter-spacing: 0.05em;
+}
+
+.nav-menu .nav-link:hover {
+  color: var(--color-rose-dusty);
+  background: none;
+}
+}
+.nav-menu .nav-link {
+  color: var(--color-rose-deep);
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
