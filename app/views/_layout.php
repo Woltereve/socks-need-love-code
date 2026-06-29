@@ -22,7 +22,7 @@
     
    <div class="nav-buttons">
 <?php if (isset($_SESSION['operator_id'])) { ?>
-    <span class="panel panel-form">Bonjour <?= $_SESSION['operator_email'] ?></span>
+    <span class="hide-mobile">Bonjour <?= $_SESSION['operator_email'] ?></span>
     <a href="/connection/logout" class="btn">Déconnection</a>
 <?php } else { ?>
     <a href="/connection" class="btn">Se connecter</a>

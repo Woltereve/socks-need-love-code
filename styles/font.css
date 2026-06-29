@@ -5,4 +5,7 @@
 :root {
   --font-titre: 'Cormorant Garamond', Georgia, serif;
   --font-corps: 'Lato', Arial, sans-serif;
+  --fw-light:   300;
+  --fw-regular: 400;
+  --fw-bold:    600;
 }

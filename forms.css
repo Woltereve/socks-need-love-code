@@ -16,7 +16,6 @@ form {
   gap: 15px;
   max-width: 500px;
   margin: 40px auto;
-  border: 3px solid var(--color-gold);
   border-radius: 6px;
 }
 

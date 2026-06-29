@@ -30,6 +30,12 @@
   --fs-h1: 3rem;
   --fs-h2: 2rem;
   --fs-h3: 1.5rem;
+  --fs-small: 0.9rem;
+  --fs-tiny:  0.75rem;
+  --lh-titre: 1.2;
+  --lh-corps: 1.6;
+  --ls-titre: 0.05em;
+  --ls-btn:   0.08em;
 }
 
 
