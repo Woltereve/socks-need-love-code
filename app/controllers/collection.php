@@ -4,6 +4,11 @@ require __DIR__ . '/../models/collection.php';
 function collection_match ($pdo) {
     $creator_id = $_SESSION['operator_id'];
     $item_id = $_POST['item_id'];
+   if (empty($_SESSION['operator_id'])) {
+    redirect('/connection?message=matcher');
+    return;
+}
+}
     $collection = get_collection ($pdo,$creator_id);
 
     if(empty($collection)){

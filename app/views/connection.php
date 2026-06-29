@@ -4,6 +4,9 @@
   <?php if (isset($error)) { ?>
    <p class="error-msg"><?= $error ?></p>
   <?php } ?>
+  <?php if (!empty($info)) { ?>
+  <p class="info-msg"><?= $info ?></p>
+<?php } ?>
 
   <form action="/connection/check" method="POST">
 

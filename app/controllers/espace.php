@@ -1,7 +1,13 @@
 <?php
 require __DIR__ . '/../models/collection.php';
 
-function espace_index($pdo) {
+
+    function espace_index($pdo) {
+    if (empty($_SESSION['operator_id'])) {
+        redirect('/connection?message=espace');
+        return;
+    }
+    
     $creator_id = $_SESSION['operator_id'];
     $collection = get_collection($pdo, $creator_id);
 

@@ -2,8 +2,18 @@
 <?php
 require __DIR__ . '/../models/connection.php';
 
+
 function connection_index($pdo) {
-    return render(__DIR__ . '/../views/connection.php', []);
+    $message = $_GET['message'] ?? '';
+    $info = '';
+if ($message === 'matcher') {
+    $info = 'Pour matcher une chaussette, veuillez vous identifier.';}
+    
+    if ($message === 'espace') {
+    $info = 'Veuillez vous identifier pour accéder à votre espace.';
+}
+
+return render(__DIR__ . '/../views/connection.php', ['info' => $info]);
     }
     
     function connection_check($pdo) {
