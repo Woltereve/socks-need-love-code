@@ -25,15 +25,25 @@
 
         <section class="panel">
           <h2 class="panel-title">Derniers inscrits</h2>
+          
           <table>
             <thead>
+
               <tr>
                 <th>Nom</th>
                 <th>Email</th>
                 <th>Date</th>
               </tr>
             </thead>
-           
+           <tbody>
+  <?php foreach ($operators as $operator) { ?>
+    <tr>
+      <td><?= $operator['pseudo'] ?? $operator['email'] ?></td>
+      <td><?= $operator['email'] ?></td>
+      <td><?= $operator['last_login'] ?? '—' ?></td>
+    </tr>
+  <?php } ?>
+</tbody>
           </table>
         <a href="/admin/user" class="btn btn-ghost">Voir tous les utilisateurs</a>
 </section>

@@ -10,7 +10,8 @@ function dashboard_index($pdo) {
     $nb_operator = count($operators);
 
     return render(__DIR__ . '/../views/dashboard.php', [
-        'nb_items' => $nb_items,
-        'nb_operator' => $nb_operator
+        'nb_items'    => $nb_items,
+        'nb_operator' => $nb_operator,
+        'operators'   => $operators
     ]);
 }
