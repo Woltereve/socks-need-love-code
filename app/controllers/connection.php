@@ -29,10 +29,7 @@ return render(__DIR__ . '/../views/connection.php', ['info' => $info]);
             $_SESSION['operator_id']    = $operator['id'];
             $_SESSION['operator_email'] = $operator['email'];
             
-            if($operator['is_admin'] === 1){
-                redirect('/admin');
-                exit;
-                }
+           
                 
                 redirect('/profile');
                 } else {

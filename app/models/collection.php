@@ -33,3 +33,7 @@ return $stmt -> fetch();
     $stmt->execute([':collection_id' => $collection_id]);
     return $stmt->fetchAll();
 }
+function remove_from_collection($pdo, $collection_id, $item_id) {
+    $stmt = $pdo->prepare('DELETE FROM collection_item WHERE collection_id = :collection_id AND item_id = :item_id');
+    $stmt->execute([':collection_id' => $collection_id, ':item_id' => $item_id]);
+}

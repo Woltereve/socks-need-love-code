@@ -1,8 +1,8 @@
 <?php
-function insert_item($pdo, $label, $description, $slug, $color, $size, $material_id,$state_id, $side, $personality, $looking_for, $red_flag, $main_image) {
+function insert_item($pdo, $label, $description, $slug, $color, $size, $material_id, $state_id, $side, $personality, $looking_for, $red_flag, $main_image, $creator_id = null) {
     $stmt = $pdo->prepare('
-        INSERT INTO item (label, description, slug, color, size, material_id,state_id, side, personality, looking_for, red_flag, main_image, statut, created_at, updated_at)
-        VALUES (:label, :description, :slug, :color, :size, :material_id,:state_id, :side, :personality, :looking_for, :red_flag, :main_image, 1, NOW(), NOW())
+        INSERT INTO item (label, description, slug, color, size, material_id, state_id, side, personality, looking_for, red_flag, main_image, statut, creator_id, created_at, updated_at)
+        VALUES (:label, :description, :slug, :color, :size, :material_id, :state_id, :side, :personality, :looking_for, :red_flag, :main_image, 1, :creator_id, NOW(), NOW())
     ');
     $stmt->execute([
         ':label'       => $label,
@@ -17,8 +17,10 @@ function insert_item($pdo, $label, $description, $slug, $color, $size, $material
         ':looking_for' => $looking_for,
         ':red_flag'    => $red_flag,
         ':main_image'  => $main_image,
+        ':creator_id'  => $creator_id,
     ]);
 }
+
 function get_all_sizes($pdo) {
     $stmt = $pdo->query('SELECT * FROM size');
     return $stmt->fetchAll();

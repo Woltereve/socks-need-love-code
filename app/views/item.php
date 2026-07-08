@@ -39,12 +39,20 @@
         <p class="sock-bio">❌ Red flags<br><?= $item['red_flag'] ?></p>
 
         <a href="/catalogue" class="nav-link">← Vers catalogue</a>
-        <a href="/message/conversation?item_id=<?= $item['id'] ?>&with=2" class="nav-link">→ Contacter </a>
-       <form action="/collection/match" method="POST">
+        <?php if (!empty($item['creator_id']) && $item['creator_id'] != ($_SESSION['operator_id'] ?? null)) { ?>
+  <a href="/message/conversation?item_id=<?= $item['id'] ?>&with=<?= $item['creator_id'] ?>" class="nav-link">→ Contacter </a>
+<?php } ?>
+       <?php if ($is_matched) { ?>
+  <form action="/collection/remove" method="POST">
     <input type="hidden" name="item_id" value="<?= $item['id'] ?>">
-   <button class="match-btn" type="submit" title="<?= $is_matched ? 'Déjà dans tes favoris' : 'Collectionner cette chaussette' ?>"><?= $is_matched ? '🧺 A-dja-mi' : '❤️ Pa-dja-mi' ?></button>
-   
-</form>
+    <button class="match-btn" type="submit">🧺 A-dja-mi</button>
+  </form>
+<?php } else { ?>
+  <form action="/collection/match" method="POST">
+    <input type="hidden" name="item_id" value="<?= $item['id'] ?>">
+    <button class="match-btn" type="submit">❤️ Pa-dja-mi</button>
+  </form>
+<?php } ?>
 <a href="/espace" class="match-btn">❤️Matcher</a>
         
     </div>

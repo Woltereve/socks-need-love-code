@@ -26,3 +26,16 @@ function message_conversation($pdo) {
         'item_id' => $item_id
     ]);
 }
+function message_index($pdo) {
+    if (empty($_SESSION['operator_id'])) {
+        redirect('/connection');
+        return;
+    }
+    $user_id = $_SESSION['operator_id'];
+    $conversations = get_conversations($pdo, $user_id);
+
+    return render(__DIR__ . '/../views/messages.php', [
+        'conversations' => $conversations,
+        'user_id'       => $user_id
+    ]);
+}

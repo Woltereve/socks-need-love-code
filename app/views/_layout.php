@@ -37,7 +37,7 @@
 <footer>
   <ul class=footer-ul>
     <li><a href="/desinscription" class="footer_li">Désinscription</a></li>
-    <li><a href="/deconnection" class="footer_li">Déconnection</a></li>
+    <li><a href="/connection/logout" class="footer_li">Déconnexion</a></li>
     <li><a href="/contact" class="footer_li">Contact</a></li>
   </ul>
   <p>&copy; <?php echo date ('Y') ; ?></p>

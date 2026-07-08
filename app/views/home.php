@@ -1,4 +1,6 @@
-
+<?php if (!empty($info)) { ?>
+  <p class="info-msg"><?= $info ?></p>
+<?php } ?>
     <h1>The Dating Socks</h1>
 
     <div class="sock-card">

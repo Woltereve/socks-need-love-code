@@ -13,8 +13,10 @@ function item_add($pdo) {
         'states'    => $states,
         'sizes'     => $sizes,
     ]);
+    
 }
 function item_create($pdo) {
+    $creator_id   = $_SESSION['operator_id'];
     $label       = $_POST['label'];
     $description = $_POST['description'];
     $color       = $_POST['color'];
@@ -37,6 +39,6 @@ function item_create($pdo) {
         $main_image = 'asset/images-SM/' . $filename;
     }
 
-    insert_item($pdo, $label, $description, $slug, $color, $size, $material_id,$state_id, $side, $personality, $looking_for, $red_flag, $main_image);
+    insert_item($pdo, $label, $description, $slug, $color, $size, $material_id,$state_id, $side, $personality, $looking_for, $red_flag, $main_image,$creator_id);
     redirect('/catalogue?success=1');
 }

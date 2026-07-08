@@ -27,12 +27,20 @@
     <option value="<?= $material['id'] ?>"><?= $material['label'] ?></option>
   <?php } ?>
 </select>
+<label class="form-label" for="state_id">État</label>
+<select class="form-input" id="state_id" name="state_id">
+  <option value="">— Choisir —</option>
+  <?php foreach ($states as $state) { ?>
+    <option value="<?= $state['id'] ?>"><?= $state['label'] ?></option>
+  <?php } ?>
+</select>
 
     <label class="form-label" for="side">Côté</label>
     <select class="form-input" id="side" name="side">
       <option value="droit">Droit</option>
       <option value="gauche">Gauche</option>
       <option value="inconnu">Inconnu</option>
+      <option value="paire">Paire</option>
     </select>
 
     <label class="form-label" for="personality">Personnalité</label>

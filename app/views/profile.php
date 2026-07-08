@@ -10,7 +10,7 @@
   
   <div class="compte-card ">
     <h3>🧦 Mes chaussettes</h3>
-    <a href="/espace" class="lien_couleur"> Mes chaussettes</a>
+    <a href="mes_chaussettes" class="lien_couleur"> Mes chaussettes</a>
 
   </div>
     <div class="compte-card">
