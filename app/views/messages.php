@@ -6,9 +6,9 @@
   <?php } ?>
 
   <?php foreach ($conversations as $conv) { ?>
-    <div class="compte-card">
-      <h3>🧦 <?= ? ?></h3>
-      <a href="/message/conversation?item_id=<?= ? ?>&with=<?= ? ?>" class="lien_couleur">
+  <div class="compte-card">
+        <h3>🧦 <?= $conv['item_label'] ?></h3>
+      <a href="/message/conversation?item_id=<?= $conv['item_id'] ?>&with=<?= $conv['sender_id'] == $user_id ? $conv['receiver_id'] : $conv['sender_id'] ?>" class="lien_couleur">
         Voir la conversation
       </a>
     </div>

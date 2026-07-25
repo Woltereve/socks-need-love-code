@@ -346,6 +346,68 @@ h6 {
   color: var(--color-muted);
   margin-bottom: 14px;
 }
+.thumb {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.btn-sm {
+  padding: 5px 11px;
+  border-radius: 6px;
+  font-size: 11px;
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-rose-dusty);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-sm:hover {
+  background: var(--color-hover);
+  color: var(--color-rose-pale);
+}
+
+.btn-sm.danger {
+  border-color: rgba(220,60,60,0.35);
+  color: #e07070;
+}
+
+.btn-sm.danger:hover {
+  background: rgba(220,60,60,0.15);
+}
+
+.table-wrap {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  padding: 12px 18px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--color-rose-dusty);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+tbody td {
+  padding: 14px 18px;
+  font-size: 13px;
+  color: var(--color-text);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  vertical-align: middle;
+}
 .info-msg { color: var(--color-rose-dusty); }
 .match-btn {
   background: var(--color-rose-deep);
@@ -632,7 +694,7 @@ footer h6 {
 }
   
   body {
-    padding: 8;
+   padding: 8px;
   }
   
   .sock-grid {
@@ -710,10 +772,3 @@ footer h6 {
   background: none;
 }
 }
-.nav-menu .nav-link {
-  color: var(--color-rose-deep);
-  font-size: 1.2rem;
-  font-weight: var(--fw-bold);
-  text-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-

@@ -25,7 +25,7 @@
 
     <div class="compte-card">
       <h3>💬 Messages</h3>
-      <a href="#" class="lien_couleur">Voir mes conversations</a>
+      <a href="/message" class="lien_couleur">Voir mes conversations</a>
     </div>
 
     <div class="compte-card">

@@ -28,6 +28,7 @@ function item_create($pdo) {
     $red_flag    = $_POST['red_flag'];
     $state_id    = $_POST['state_id'];
     $slug        = slugify($label);
+    $theme_id    = $_POST['theme_id'] ?? NULL;
         
     $main_image = '';
     if (isset($_FILES['main_image']) && $_FILES['main_image']['error'] === 0) {
@@ -39,6 +40,14 @@ function item_create($pdo) {
         $main_image = 'asset/images-SM/' . $filename;
     }
 
-    insert_item($pdo, $label, $description, $slug, $color, $size, $material_id,$state_id, $side, $personality, $looking_for, $red_flag, $main_image,$creator_id);
+    insert_item($pdo, $label, $description, $slug, $color, $size, $material_id,$state_id, $side, $personality, $looking_for, $red_flag, $main_image,$creator_id, $theme_id);
     redirect('/catalogue?success=1');
+}
+function item_delete($pdo, $id) {
+    if (empty($_SESSION['operator_id'])) {
+        redirect('/connection');
+        return;
+    }
+    delete_item($pdo, $id);
+    redirect('/mes_chaussettes');
 }

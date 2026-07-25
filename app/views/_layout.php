@@ -41,7 +41,7 @@
     <li><a href="/contact" class="footer_li">Contact</a></li>
   </ul>
   <p>&copy; <?php echo date ('Y') ; ?></p>
-  <a href="mentions-legales.html">Mentions légales</a>
+  <a href="/mentions_legales">Mentions légales</a>
   <p>"Un projet imaginé par Eve "</p>
   <strong>"Parce que personne ne devrait finir seul au fond d'un tambour de machine à laver." 🧦</strong>
 </footer>

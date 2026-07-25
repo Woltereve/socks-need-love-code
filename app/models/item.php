@@ -1,8 +1,8 @@
 <?php
-function insert_item($pdo, $label, $description, $slug, $color, $size, $material_id, $state_id, $side, $personality, $looking_for, $red_flag, $main_image, $creator_id = null) {
+function insert_item($pdo, $label, $description, $slug, $color, $size, $material_id, $state_id, $side, $personality, $looking_for, $red_flag, $main_image, $creator_id = null,$theme_id= NULL) {
     $stmt = $pdo->prepare('
-        INSERT INTO item (label, description, slug, color, size, material_id, state_id, side, personality, looking_for, red_flag, main_image, statut, creator_id, created_at, updated_at)
-        VALUES (:label, :description, :slug, :color, :size, :material_id, :state_id, :side, :personality, :looking_for, :red_flag, :main_image, 1, :creator_id, NOW(), NOW())
+        INSERT INTO item (label, description, slug, color, size, material_id, state_id, side, personality, looking_for, red_flag, main_image, statut, creator_id,theme_id, created_at, updated_at)
+        VALUES (:label, :description, :slug, :color, :size, :material_id, :state_id, :side, :personality, :looking_for, :red_flag, :main_image, 1, :creator_id,:theme_id, NOW(), NOW())
     ');
     $stmt->execute([
         ':label'       => $label,
@@ -18,6 +18,7 @@ function insert_item($pdo, $label, $description, $slug, $color, $size, $material
         ':red_flag'    => $red_flag,
         ':main_image'  => $main_image,
         ':creator_id'  => $creator_id,
+        ':theme_id'    => $theme_id,
     ]);
 }
 

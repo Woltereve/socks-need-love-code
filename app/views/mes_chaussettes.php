@@ -1,26 +1,28 @@
+<h1 style="text-align:center;">Mes chaussettes</h1>
 
-<h1 class="page-title" style="text-align:center;">Mes  chaussettes</h1>
-<div class="sock-grid">
-
-  <?php if (empty($items)) { ?>
-    <p style="text-align:center;">Tu n'as publier aucune chaussette.</p>
-  <?php } ?>
-
-  <?php foreach ($items as $item) { ?>
-    <article class="sock-card">
-      <div class="sock-photo">
-        <img src="/<?= str_replace('\\', '/', $item['main_image']) ?>" alt="<?= $item['label'] ?>" />
-      </div>
-      <div class="sock-info">
-        <h2><?= $item['label'] ?></h2>
-        <p class="sock-bio"><?= $item['description'] ?></p>
-        <a href="/catalogue/show/<?= $item['slug'] ?>" class="nav-link">Voir la fiche</a>
-      </div>
-    </article>
-  <?php } ?>
-
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Photo</th>
+        <th>Nom</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php if (empty($items)) { ?>
+        <tr><td colspan="3" style="text-align:center;">Tu n'as publié aucune chaussette.</td></tr>
+      <?php } ?>
+      <?php foreach ($items as $item) { ?>
+        <tr>
+          <td><img src="/<?= str_replace('\\', '/', $item['main_image']) ?>" class="thumb" /></td>
+          <td><?= $item['label'] ?></td>
+          <td>
+            <a href="/catalogue/show/<?= $item['slug'] ?>" class="btn-sm">Voir</a>
+            <a href="/item/delete/<?= $item['id'] ?>" class="btn-sm danger" onclick="return confirm('Supprimer cette chaussette ?')">Supprimer</a>
+          </td>
+        </tr>
+      <?php } ?>
+    </tbody>
+  </table>
 </div>
-
-
-
-
