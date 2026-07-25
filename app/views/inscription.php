@@ -1,5 +1,8 @@
 <div class="form-container">
   <h1>Inscription </h1>
+  <?php if (!empty($error)) { ?>
+  <p class="error-msg"><?= $error ?></p>
+<?php } ?>
 
   <form action="/inscription/save" method="POST">
   <label class="form-label" for="pseudo">pseudo</label>

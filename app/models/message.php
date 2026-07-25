@@ -12,9 +12,12 @@ $stmt -> execute ([
 
 function get_messages($pdo, $user1_id, $user2_id, $item_id) {
 
-    $stmt =$pdo -> prepare ('SELECT * from conversation_message WHERE item_id= :item_id 
-    AND (sender_id = :user1a AND receiver_id = :user2a)
-    OR (sender_id = :user2b AND receiver_id = :user1b)
+    $stmt =$pdo -> prepare ('SELECT * from conversation_message WHERE item_id = :item_id 
+   AND (
+  (sender_id = :user1a AND receiver_id = :user2a)
+  OR
+  (sender_id = :user2b AND receiver_id = :user1b)
+)
     
     ');
 

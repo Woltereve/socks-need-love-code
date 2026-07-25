@@ -1,13 +1,15 @@
-<div class="page-header">
+<?php
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+?><div class="page-header">
         <div>
           <h1 class="page-title">Gestion des chaussettes</h1>
           <p class="page-sub">Catalogue complet de la plateforme</p>
           <a href="/admin/item/gestion" class="btn btn-primary">+ Ajouter</a>
 </div>
 </div>
-        
-
-      <div class="filters">
+        <div class="filters">
   <div class="search-wrap">
     <span class="search-icon">⌕</span>
     <input class="search-input" type="text" name="recherche" placeholder="Rechercher une chaussette…" />
@@ -66,8 +68,14 @@
  
     
   
-  <td><a href="/admin/item/edit/<?= $item['slug'] ?>" class="btn-sm">Modifier</a></td>
-<td><a href="/admin/item/delete/<?= $item['id'] ?>" class="btn-sm btn-danger" onclick="return confirm('Supprimer cette chaussette ?')">Supprimer</a></td>
+  <td><a href="/admin/item/edit/<?= $item['slug'] ?>" class="btn-sm">Modifier</a>
+</td>
+<td><form action="/admin/item/delete/<?= $item['id'] ?>" method="POST" style="display:inline;">
+    <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token'] ?>">
+    <button type="submit" class="btn-sm danger" onclick="return confirm('Supprimer cette chaussette ?')">Supprimer</button>
+</form>
+</td>
+
 
 </tr>
 <?php } ?>

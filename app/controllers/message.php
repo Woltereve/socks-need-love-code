@@ -2,6 +2,10 @@
 require __DIR__ . '/../models/message.php';
 
 function message_send($pdo) {
+    if (empty($_SESSION['operator_id'])) {
+    redirect('/connection');
+    return;
+}
 $sender_id = $_SESSION ['operator_id'];
 $receiver_id= $_POST ['receiver_id'];
 $item_id = $_POST ['item_id'];
@@ -13,6 +17,10 @@ redirect('/message/conversation?item_id=' . $item_id . '&with=' . $receiver_id);
 }
 
 function message_conversation($pdo) {
+    if (empty($_SESSION['operator_id'])) {
+    redirect('/connection');
+    return;
+}
     $user1_id = $_SESSION['operator_id'];
     $user2_id = $_GET['with'];
     $item_id = $_GET['item_id'];

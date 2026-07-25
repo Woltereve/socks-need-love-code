@@ -55,6 +55,7 @@ function item_save($pdo) {
     $looking_for = $_POST['looking_for'];
     $red_flag    = $_POST['red_flag'];
     $state_id    = $_POST['state_id'];
+    $theme_id    = $_POST['theme_id'] ?? null;
     $slug        = slugify($label);
         
     $main_image = '';
@@ -68,15 +69,23 @@ function item_save($pdo) {
     }
 
     if(empty($_POST['id'])){
-        insert_item($pdo, $label, $description, $slug, $color, $size, $material_id,$state_id, $side, $personality, $looking_for, $red_flag, $main_image);
+        insert_item($pdo, $label, $description, $slug, $color, $size, $material_id,$state_id, $side, $personality, $looking_for, $red_flag, $main_image,$theme_id);
     }
     else{
-        update_item($pdo, $_POST['id'], $label, $description, $slug, $color, $size, $material_id,$state_id, $side, $personality, $looking_for, $red_flag, $main_image);
+        update_item($pdo, $_POST['id'], $label, $description, $slug, $color, $size, $material_id,$state_id, $side, $personality, $looking_for, $red_flag, $main_image,$theme_id);
     }
     
     redirect('/admin/item/edit/'.$slug.'?success=1');
 }
 function item_delete($pdo, $id) {
+    if ($_SERVER ['REQUEST_METHOD'] !== 'POST'){
+        redirect ('/admin/item/gestion');
+        return;
+    }
+    if (empty ($_POST ['csrf_token']) || $_POST ['csrf_token']!== $_SESSION ['csrf_token']){
+        redirect ('/admin/item/gestion');
+        return;
+    }
     delete_item($pdo, $id);
     redirect('/admin/item/gestion');
 }

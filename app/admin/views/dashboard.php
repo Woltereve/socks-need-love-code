@@ -47,26 +47,8 @@
           </table>
         <a href="/admin/user" class="btn btn-ghost">Voir tous les utilisateurs</a>
 </section>
-</section>
-       
-
-        <section class="panel">
-          <h2 class="panel-title">Activité récente</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Action</th>
-                <th>Date</th>
-              </tr>
-            </thead>
-           
-          </table>
-</section>
- </div>
-      
-
-      
-      <section class="panel">
+</div>
+    <section class="panel">
         <h2 class="panel-title">Signalements en attente</h2>
         <table>
           <thead>

@@ -1,6 +1,14 @@
 <?php
 function inscription_index($pdo) {
-    return render(__DIR__ . '/../views/inscription.php', []);
+    $error = $_GET['error'] ?? '';
+    $message = '';
+    if ($error === 'pseudo') {
+        $message = 'Le pseudo est obligatoire.';
+    }
+    if ($error === 'password') {
+        $message = 'Les mots de passe ne correspondent pas.';
+    }
+    return render(__DIR__ . '/../views/inscription.php', ['error' => $message]);
 }
 
 function inscription_save($pdo) {
@@ -9,6 +17,10 @@ function inscription_save($pdo) {
     $email               = $_POST['email'];
     $password            = $_POST['password'];
     $password_confirm    = $_POST['password_confirm'];
+    if (empty($pseudo)) {
+    redirect('/inscription?error=pseudo');
+    return;
+}
 
     if ($password !== $password_confirm) {
         redirect('/inscription?error=password');
