@@ -34,7 +34,7 @@
       </div>
       <div class="nav-section">
         <span class="nav-label">Modération</span>
-        <a class="nav-item" href="/admin/signalement"><span class="nav-icon">⚑</span> Signalements</a>
+        <a class="nav-item" href="/admin/signalement"><span class="nav-icon">✉</span> Messages reçus</a>
       </div>
       <div class="nav-section">
         <span class="nav-label">Système</span>

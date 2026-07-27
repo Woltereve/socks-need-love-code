@@ -6,10 +6,10 @@ if (empty($_SESSION['csrf_token'])) {
         <div>
           <h1 class="page-title">Gestion des chaussettes</h1>
           <p class="page-sub">Catalogue complet de la plateforme</p>
-          <a href="/admin/item/gestion" class="btn btn-primary">+ Ajouter</a>
+          <a href="/admin/item/new" class="btn btn-primary">+ Ajouter</a>
 </div>
 </div>
-        <div class="filters">
+        <!-- <div class="filters">
   <div class="search-wrap">
     <span class="search-icon">⌕</span>
     <input class="search-input" type="text" name="recherche" placeholder="Rechercher une chaussette…" />
@@ -25,7 +25,7 @@ if (empty($_SESSION['csrf_token'])) {
           <option value="retiree">Retirée</option>
         </select>
         <button class="btn btn-ghost" type="submit">Filtrer</button>
-      </div>
+      </div> -->
 
       
       <div class="table-wrap">

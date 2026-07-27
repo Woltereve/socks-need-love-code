@@ -19,7 +19,7 @@ function get_all_colors($pdo) {
     return $stmt->fetchAll();
 }
 function search_items($pdo, $q, $material_id, $size, $color, $state_id) {
-    $sql = "SELECT * FROM item WHERE 1=1";
+    $sql = "SELECT * FROM item WHERE statut = 1";
     $params = [];
 
     if (!empty($q)) {

@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/../../models/item.php';
-require __DIR__ . '/../../models/catalogue.php';
+
 function update_item($pdo, $id, $label, $description, $slug, $color, $size, $material_id,$state_id, $side, $personality, $looking_for, $red_flag, $main_image,$theme_id = NULL) {
     if ($main_image !== '') {
         $stmt = $pdo->prepare('

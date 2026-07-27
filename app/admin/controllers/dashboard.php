@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/../../models/catalogue.php';
-require __DIR__ . '/../models/connection.php';
+require __DIR__ . '/../../models/connection.php';
 
 function dashboard_index($pdo) {
     $items = get_all_items($pdo);
