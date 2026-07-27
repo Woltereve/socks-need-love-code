@@ -1,5 +1,5 @@
 
-  <body>
+  
     <h1>Socks Need Love</h1>
     <p>
       <strong>Documents légaux</strong><br />
@@ -109,5 +109,5 @@
         chance.</strong
       >
     </p>
-  </body>
+  
 

@@ -10,7 +10,7 @@ function contact_send($pdo) {
     $email    =$_POST ['email'];
     $message  =$_POST ['message'];
     $name     = $nom . ' ' . $prenom;
-insert_message($pdo, $name, $email, 'Contact depuis le site', $message, 1);
+insert_message($pdo, $name, $email, $message, 1);
 
     return render(__DIR__ . '/../views/contact.php', [
         'success' => 'Votre message a bien été envoyé !'

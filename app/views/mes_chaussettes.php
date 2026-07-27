@@ -19,7 +19,9 @@
           <td><?= $item['label'] ?></td>
           <td>
             <a href="/catalogue/show/<?= $item['slug'] ?>" class="btn-sm">Voir</a>
-            <a href="/item/delete/<?= $item['id'] ?>" class="btn-sm danger" onclick="return confirm('Supprimer cette chaussette ?')">Supprimer</a>
+            <form action="/item/delete/<?= $item['id'] ?>" method="POST" style="display:inline;">
+    <button type="submit" class="btn-sm danger" onclick="return confirm('Supprimer cette chaussette ?')">Supprimer</button>
+</form>
           </td>
         </tr>
       <?php } ?>

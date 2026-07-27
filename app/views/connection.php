@@ -17,3 +17,5 @@
     <input class="form-input" type="password" id="password" name="password" placeholder="••••••••" required />
 
      <button class="btn btn-primary" type="submit">Connection</button>
+</form>
+</div>

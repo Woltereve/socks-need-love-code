@@ -55,9 +55,7 @@
     <label class="form-label" for="main_image">Photo</label>
     <input class="form-input" type="file" id="main_image" name="main_image" accept="image/*" required />
 
-    
 
-      </select>
        
        <label class="form-label" for="theme_id">Thème</label>
        <select class="form-input" id="theme_id" name="theme_id">

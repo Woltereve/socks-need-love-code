@@ -25,7 +25,7 @@ return render(__DIR__ . '/../views/connection.php', ['info' => $info]);
         
         
         if ($operator && password_verify($password, $operator['password'])) {
-            session_start();
+            
             $_SESSION['operator_id']    = $operator['id'];
             $_SESSION['operator_email'] = $operator['email'];
             
@@ -40,5 +40,6 @@ return render(__DIR__ . '/../views/connection.php', ['info' => $info]);
                         session_destroy();
                         redirect('/');
                         }
+                        
                         ?>
 
