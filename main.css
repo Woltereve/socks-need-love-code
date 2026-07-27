@@ -431,15 +431,7 @@ tbody td {
   color: var(--color-rose-dusty);
 }
 
-.match-btn:first-of-type {
-  background: transparent;
-  border: 1px solid var(--color-rose-deep);
-  color: var(--color-rose-dusty);
-}
 
-.match-btn:first-of-type:hover {
-  background: var(--color-hover);
-}
 
 
 .button {

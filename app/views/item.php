@@ -45,12 +45,12 @@
        <?php if ($is_matched) { ?>
   <form action="/collection/remove" method="POST">
     <input type="hidden" name="item_id" value="<?= $item['id'] ?>">
-    <button class="match-btn" type="submit">🧺 A-dja-mi</button>
+    <button class="match-btn" type="submit" title="Retirer de ta collection">🧺 A-dja-mi</button>
   </form>
 <?php } else { ?>
   <form action="/collection/match" method="POST">
     <input type="hidden" name="item_id" value="<?= $item['id'] ?>">
-    <button class="match-btn" type="submit">❤️ Pa-dja-mi</button>
+    <button class="match-btn" type="submit" title="Ajouter à ta collection">❤️ Pa-dja-mi</button>
   </form>
 <?php } ?>
 
