@@ -51,3 +51,10 @@ function delete_item($pdo, $id) {
     $stmt = $pdo->prepare('UPDATE item SET statut = 0 WHERE id = :id');
     $stmt->execute([':id' => $id]);
 }
+function get_my_items ($pdo, $creator_id){
+$stmt = $pdo->prepare ('SELECT * FROM item WHERE creator_id = :creator_id AND statut = 1');
+$stmt->execute ([':creator_id' =>$creator_id]);
+return $stmt->fetchAll();
+
+
+}

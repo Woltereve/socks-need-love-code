@@ -20,6 +20,8 @@ function catalogue_show($pdo, $slug) {
         $is_matched = !empty(is_in_collection($pdo, $collection['id'], $data['item']['id']));
         }
         $data['is_matched'] = $is_matched;
+        require __DIR__ . '/../models/sock_like.php';
+        $data['my_items'] = !empty($creator_id) ? get_my_items ($pdo, $creator_id) : [];
         return render(__DIR__ . '/../views/item.php', $data);
 }
 
